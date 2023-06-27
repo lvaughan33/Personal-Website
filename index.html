@@ -14,101 +14,67 @@
         
         main {
             display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             max-width: 800px;
             margin: 20px auto;
             background-color: #000;
-            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        aside {
+            flex: 1;
         }
         
         section {
             flex: 1;
-            padding: 20px;
-            background-color: #000;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-        
-        aside {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-end;
         }
         
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
             text-align: right;
-            margin-top: 0;
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
             text-align: right;
-            margin-top: 0;
         }
         
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        nav li {
-            margin-bottom: 10px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: #fff;
-        }
-        
-        .profile-picture {
+        img {
             width: 200px;
             display: block;
-            margin-top: 0;
-            margin-bottom: 20px;
-            align-self: flex-end;
+            margin-left: auto;
+            margin-right: 0;
         }
     </style>
 </head>
 <body>
     <main>
-        <section>
-            <h2>Home</h2>
-            <!-- Add more sections as needed -->
-        </section>
-        
-        <div style="flex: 1;"></div> <!-- Blank space -->
-        
         <aside>
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>
-                Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Physicist<br>
-                Outdoor Enthusiast
-            </p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical-writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
+                    <li><a href="python-code.html">Python Code</a></li>
+                    <li><a href="r-code.html">R Code</a></li>
+                    <li><a href="matlab-code.html">MATLAB Code</a></li>
+                </ul>
+            </nav>
         </aside>
+        <section>
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Physicist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        <img src="profile_picture.png" alt="Profile Picture">
     </main>
-    
-    <img src="profile_picture.png" alt="Profile Picture" class="profile-picture">
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="presentations.html">Presentations</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="technical-writing.html">Technical Writing</a></li>
-            <li><a href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
-            <li><a href="python-code.html">Python Code</a></li>
-            <li><a href="r-code.html">R Code</a></li>
-            <li><a href="matlab-code.html">MATLAB Code</a></li>
-        </ul>
-    </nav>
 </body>
 </html>
