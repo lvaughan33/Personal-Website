@@ -12,13 +12,6 @@
             padding: 0;
         }
         
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: left; /* Align header text to the left */
-        }
-        
         main {
             display: flex;
             max-width: 800px;
@@ -29,18 +22,22 @@
         aside {
             background-color: #000;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
         }
         
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
-            display: inline; /* Make the header text display inline */
+            text-align: right;
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
-            text-align: right; /* Right justify the paragraph text */
+            text-align: right;
         }
         
         nav ul {
@@ -71,11 +68,14 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Lucas Vaughan, M.S.</h1>
-    </header>
     <main>
         <aside>
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>
+                Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Physicist<br>
+                Outdoor Enthusiast
+            </p>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -94,11 +94,6 @@
         <section>
             <h2>Home</h2>
             <img src="profile_picture.png" alt="Profile Picture" width="200">
-            <p>
-                Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Physicist<br>
-                Outdoor Enthusiast
-            </p>
         </section>
     </main>
 </body>
