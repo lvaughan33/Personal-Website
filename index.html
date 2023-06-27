@@ -34,7 +34,7 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: flex-start;
             align-items: flex-end;
         }
         
@@ -71,6 +71,12 @@
             margin-right: 20px;
             margin-top: 20px;
         }
+        
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -83,12 +89,14 @@
         <div style="flex: 1;"></div> <!-- Blank space -->
         
         <aside>
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>
-                Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Physicist<br>
-                Outdoor Enthusiast
-            </p>
+            <div class="profile-section">
+                <h1>Lucas Vaughan, M.S.</h1>
+                <p>
+                    Applied Mathematician | Data Analyst | Technical Writer<br>
+                    Biologist | Ecologist | Physicist<br>
+                    Outdoor Enthusiast
+                </p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
