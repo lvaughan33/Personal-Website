@@ -21,8 +21,20 @@
             padding: 20px;
         }
         
-        aside {
+        .section-bar {
+            width: 1px;
+            background-color: #fff;
             margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
+        }
+        
+        aside {
+            display: flex;
+            align-items: center;
+            margin-right: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
+        }
+        
+        aside img {
+            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
         }
         
         section {
@@ -48,12 +60,6 @@
             white-space: pre-line; /* Preserve line breaks */
         }
         
-        img {
-            width: 200px;
-            margin-top: 10px; /* Update the margin-top value as needed */
-            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-        }
-        
         nav a {
             color: #fff; /* Update font color for navigation links to white */
         }
@@ -61,6 +67,15 @@
 </head>
 <body>
     <main>
+        <section>
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        
+        <div class="section-bar"></div>
+        
         <aside>
             <nav>
                 <ul>
@@ -76,14 +91,8 @@
                     <li><a href="matlab-code.html">MATLAB Code</a></li>
                 </ul>
             </nav>
+            <img src="profile_picture.png" alt="Profile Picture">
         </aside>
-        <section class="section-content">
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </section>
-        <img src="profile_picture.png" alt="Profile Picture">
     </main>
 </body>
 </html>
