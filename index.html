@@ -27,6 +27,7 @@
         
         section {
             color: #fff; /* Update font color for the sections to white */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
         }
         
         h1 {
@@ -34,6 +35,7 @@
             margin-bottom: 10px;
             text-align: right; /* Keep the text right-aligned */
             margin-right: 20px; /* Update the margin-right value to move the text to the left */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
         }
         
         p {
@@ -42,10 +44,8 @@
             text-align: right;
             margin-top: -10px; /* Update the margin-top value as needed */
             margin-right: 40px; /* Update the margin-right value to increase space */
-            display: -webkit-box;
-            -webkit-line-clamp: 3; /* Limit to 3 lines */
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            display: block; /* Display as a block to allow line breaks */
+            white-space: pre-line; /* Preserve line breaks */
         }
         
         img {
@@ -80,7 +80,7 @@
         <section class="section-content">
             <h1>Lucas Vaughan, M.S.</h1>
             <p>Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Environmental Scientist <br>
+                Biologist | Ecologist | Environmental Scientist<br>
                 Outdoor Enthusiast</p>
         </section>
         <img src="profile_picture.png" alt="Profile Picture">
