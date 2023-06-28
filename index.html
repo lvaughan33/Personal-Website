@@ -25,7 +25,8 @@
             margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
         }
         
-        section {
+        section.section-content {
+            flex: 1;
             color: #fff; /* Update font color for the sections to white */
             margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
         }
@@ -61,6 +62,13 @@
 </head>
 <body>
     <main>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        
         <aside>
             <nav>
                 <ul>
@@ -77,12 +85,7 @@
                 </ul>
             </nav>
         </aside>
-        <section class="section-content">
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </section>
+        
         <img src="profile_picture.png" alt="Profile Picture">
     </main>
 </body>
