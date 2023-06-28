@@ -14,7 +14,6 @@
         
         main {
             display: flex;
-            justify-content: space-between;
             align-items: flex-start;
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
@@ -22,21 +21,8 @@
             padding: 20px;
         }
         
-        .section-bar {
-            width: 1px;
-            background-color: #fff;
-            height: 100vh;
-            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
-        }
-        
         aside {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        
-        nav {
-            flex: 1;
+            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
         }
         
         section {
@@ -48,7 +34,7 @@
             font-size: 32px;
             margin-bottom: 10px;
             text-align: right; /* Keep the text right-aligned */
-            margin-left: 20px; /* Move the text to the left */
+            margin-right: 20px; /* Update the margin-right value to move the text to the left */
             margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
         }
         
@@ -56,28 +42,25 @@
             font-size: 18px;
             line-height: 1.5;
             text-align: right;
-            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
-            margin-left: 20px; /* Move the text to the left */
+            margin-top: -10px; /* Update the margin-top value as needed */
+            margin-right: 40px; /* Update the margin-right value to increase space */
+            display: block; /* Display as a block to allow line breaks */
+            white-space: pre-line; /* Preserve line breaks */
         }
         
         img {
             width: 200px;
-            display: block;
-            margin-left: 20px; /* Move the profile picture to the left */
+            margin-top: 10px; /* Update the margin-top value as needed */
+            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
+        }
+        
+        nav a {
+            color: #fff; /* Update font color for navigation links to white */
         }
     </style>
 </head>
 <body>
     <main>
-        <section>
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
-                Biologist | Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </section>
-        
-        <div class="section-bar"></div>
-        
         <aside>
             <nav>
                 <ul>
@@ -93,8 +76,14 @@
                     <li><a href="matlab-code.html">MATLAB Code</a></li>
                 </ul>
             </nav>
-            <img src="profile_picture.png" alt="Profile Picture">
         </aside>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        <img src="profile_picture.png" alt="Profile Picture">
     </main>
 </body>
 </html>
