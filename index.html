@@ -21,34 +21,39 @@
             padding: 20px;
         }
         
-        .section-container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        
-        .section-row {
+        .rectangle {
+            flex: 1;
             display: flex;
             align-items: center;
+            justify-content: center;
+        }
+        
+        .bar {
+            width: 1px;
+            background-color: #fff;
+        }
+        
+        .content {
+            text-align: center;
+        }
+        
+        section {
+            color: #fff; /* Update font color for the sections to white */
+        }
+        
+        h1 {
+            font-size: 32px;
             margin-bottom: 10px;
         }
         
-        .sections {
-            flex-grow: 1;
+        p {
+            font-size: 18px;
+            line-height: 1.5;
         }
         
-        .descriptors {
-            margin-right: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-        }
-        
-        .profile-picture {
-            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-        }
-        
-        .vertical-bar {
-            width: 1px;
-            background-color: #fff;
-            margin: 0 10px; /* Adjust the margin as needed */
+        img {
+            width: 200px;
+            margin-top: 10px; /* Update the margin-top value as needed */
         }
         
         nav a {
@@ -58,22 +63,24 @@
 </head>
 <body>
     <main>
-        <div class="section-container">
-            <div class="section-row">
-                <div class="sections">
-                    <!-- Sections content here -->
-                </div>
-                <div class="vertical-bar"></div>
-                <div class="descriptors">
-                    <!-- Descriptors content here -->
-                </div>
-                <div class="profile-picture">
-                    <!-- Profile Picture content here -->
-                </div>
-                <div class="vertical-bar"></div>
-                <div class="sections"></div>
-            </div>
-        </div>
+        <div class="rectangle"></div> <!-- Blank space -->
+        <div class="rectangle">
+            <section>
+                <h1>Lucas Vaughan, M.S.</h1>
+                <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                   Biologist | Ecologist | Environmental Scientist<br>
+                   Outdoor Enthusiast</p>
+            </section>
+        </div> <!-- Sections -->
+        <div class="rectangle bar"></div> <!-- Thin vertical bar -->
+        <div class="rectangle">
+            <section class="content">
+                <p>Descriptors</p>
+                <img src="profile_picture.png" alt="Profile Picture">
+            </section>
+        </div> <!-- Descriptors and Profile Picture -->
+        <div class="rectangle bar"></div> <!-- Thin vertical bar -->
+        <div class="rectangle"></div> <!-- Blank space -->
     </main>
 </body>
 </html>
