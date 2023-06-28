@@ -14,52 +14,48 @@
         
         main {
             display: flex;
-            justify-content: space-between;
             align-items: flex-start;
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #000;
             padding: 20px;
         }
-
+        
         aside {
-            flex: 1;
+            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
         }
         
-        section.section-content {
-            flex: 1;
+        section {
             color: #fff; /* Update font color for the sections to white */
-            margin-top: 20px; /* Increase the margin-top value to move the sections down */
-        }
-
-        nav a {
-            color: #fff; /* Update font color for navigation links to white */
         }
         
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
-            text-align: right;
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 40px;
+            text-align: right; /* Keep the text right-aligned */
+            margin-right: 20px; /* Update the margin-right value to move the text to the left */
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
             text-align: right;
-            margin-top: 0px;
-            margin-left: auto;
-            margin-right: 20px;
+            margin-top: -10px; /* Update the margin-top value as needed */
+            margin-right: 40px; /* Update the margin-right value to increase space */
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limit to 3 lines */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
         
         img {
             width: 200px;
-            display: block;
-            margin-left: 20px;
-            margin-right: -10px;
-            margin-top: 46px;
+            margin-top: 10px; /* Update the margin-top value as needed */
+            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
+        }
+        
+        nav a {
+            color: #fff; /* Update font color for navigation links to white */
         }
     </style>
 </head>
@@ -81,8 +77,8 @@
                 </ul>
             </nav>
         </aside>
-        <section>
-            <h1>Lucas Vaughan</h1>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
             <p>Applied Mathematician | Data Analyst | Technical Writer<br>
                 Biologist | Ecologist | Environmental Scientist <br>
                 Outdoor Enthusiast</p>
