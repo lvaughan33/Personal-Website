@@ -1,58 +1,86 @@
-<style>
-    /* Add your CSS styles here */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #111; /* Update background color to space black or charcoal */
-        color: #fff; /* Update font color to white */
-        margin: 0;
-        padding: 0;
-    }
-    
-    main {
-        display: flex;
-        align-items: flex-start;
-        max-width: 800px;
-        margin: 40px auto 0; /* Adjust the top margin to move sections down */
-        background-color: #111; /* Update background color to space black or charcoal */
-        padding: 20px;
-    }
-    
-    aside {
-        margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
-    }
-    
-    section {
-        color: #fff; /* Update font color for the sections to white */
-        margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
-        margin-left: 30px; /* Add a left margin of 30px */
-        flex: 1; /* Take up remaining space */
-    }
-    
-    h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
-        text-align: right; /* Keep the text right-aligned */
-        margin-right: 20px; /* Update the margin-right value to move the text to the left */
-        margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
-    }
-    
-    p {
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: right;
-        margin-top: -10px; /* Update the margin-top value as needed */
-        margin-right: 40px; /* Update the margin-right value to increase space */
-        display: block; /* Display as a block to allow line breaks */
-        white-space: pre-line; /* Preserve line breaks */
-    }
-    
-    img {
-        width: 200px;
-        margin-top: 10px; /* Update the margin-top value as needed */
-        margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-    }
-    
-    nav a {
-        color: #fff; /* Update font color for navigation links to white */
-    }
-</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucas Vaughan, M.S.</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111; /* Update background color to space black or charcoal */
+            color: #fff; /* Update font color to white */
+            margin: 0;
+            padding: 0;
+        }
+        
+        main {
+            display: flex;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: 40px auto 0; /* Adjust the top margin to move sections down */
+            background-color: #111; /* Update background color to space black or charcoal */
+            padding: 20px;
+        }
+        
+        aside {
+            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
+        }
+        
+        section {
+            color: #fff; /* Update font color for the sections to white */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: right; /* Keep the text right-aligned */
+            margin-right: 20px; /* Update the margin-right value to move the text to the left */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: right;
+            margin-top: -10px; /* Update the margin-top value as needed */
+            margin-right: 40px; /* Update the margin-right value to increase space */
+            display: block; /* Display as a block to allow line breaks */
+            white-space: pre-line; /* Preserve line breaks */
+        }
+        
+        img {
+            width: 200px;
+            margin-top: 10px; /* Update the margin-top value as needed */
+            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
+        }
+        
+        nav a {
+            color: #fff; /* Update font color for navigation links to white */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical-writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        <img src="profile_picture.png" alt="Profile Picture">
+    </main>
+</body>
+</html>
