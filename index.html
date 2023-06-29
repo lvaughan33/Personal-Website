@@ -21,34 +21,37 @@
             padding: 20px;
         }
         
-        .section-container {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+        aside {
+            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
         }
         
-        .section-row {
-            display: flex;
-            align-items: center;
+        section.section-content {
+            color: #fff; /* Update font color for the sections to white */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
+        }
+        
+        h1 {
+            font-size: 32px;
             margin-bottom: 10px;
+            text-align: right; /* Keep the text right-aligned */
+            margin-right: 20px; /* Update the margin-right value to move the text to the left */
+            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
         }
         
-        .sections {
-            flex-grow: 1;
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: right;
+            margin-top: -10px; /* Update the margin-top value as needed */
+            margin-right: 40px; /* Update the margin-right value to increase space */
+            display: block; /* Display as a block to allow line breaks */
+            white-space: pre-line; /* Preserve line breaks */
         }
         
-        .descriptors {
-            margin-right: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-        }
-        
-        .profile-picture {
+        img {
+            width: 200px;
+            margin-top: 10px; /* Update the margin-top value as needed */
             margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-        }
-        
-        .vertical-bar {
-            width: 1px;
-            background-color: #fff;
-            margin: 0 10px; /* Adjust the margin as needed */
         }
         
         nav a {
@@ -58,22 +61,29 @@
 </head>
 <body>
     <main>
-        <div class="section-container">
-            <div class="section-row">
-                <div class="sections">
-                    <!-- Sections content here -->
-                </div>
-                <div class="vertical-bar"></div>
-                <div class="descriptors">
-                    <!-- Descriptors content here -->
-                </div>
-                <div class="profile-picture">
-                    <!-- Profile Picture content here -->
-                </div>
-                <div class="vertical-bar"></div>
-                <div class="sections"></div>
-            </div>
-        </div>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Applied Mathematician | Data Analyst | Technical Writer<br>
+                Biologist | Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical-writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter-notebooks.html">Jupyter Notebooks</a></li>
+                    <li><a href="python-code.html">Python Code</a></li>
+                    <li><a href="r-code.html">R Code</a></li>
+                    <li><a href="matlab-code.html">MATLAB Code</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <img src="profile_picture.png" alt="Profile Picture">
     </main>
 </body>
 </html>
