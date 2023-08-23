@@ -3,7 +3,7 @@
 <head>
     <title>Lucas Vaughan, M.S.</title>
     <style>
-        /* Add your CSS styles here */
+        /* Add your custom styles here */
         body {
             font-family: Arial, sans-serif;
             background-color: #111; /* Update background color to space black or charcoal */
@@ -14,16 +14,15 @@
         
         main {
             display: flex;
-            align-items: flex-start;
+            align-items: center; /* Center content vertically */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
-            margin-left: 20px;
             background-color: #111; /* Update background color to space black or charcoal */
             padding: 20px;
         }
         
         aside {
-            margin-right: 10px; /* Add a small amount of empty space between Sections and Descriptors */
+            margin-right: 20px; /* Add some space between Profile Picture and Text */
         }
         
         section {
@@ -34,27 +33,22 @@
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
-            text-align: right; /* Keep the text right-aligned */
-            margin-right: 23px; /* Update the margin-right value to move the text to the left */
-            margin-left: 20px;
-            margin-top: 10px; /* Reset margin-top to align with the top of Profile Picture */
+            text-align: left; /* Align text to the left */
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
-            text-align: right;
-            margin-top: -10px; /* Update the margin-top value as needed */
-            margin-right: 25px; /* Update the margin-right value to increase space */
+            text-align: left;
             display: block; /* Display as a block to allow line breaks */
             white-space: pre-line; /* Preserve line breaks */
         }
         
         img {
             width: 200px;
-            margin-top: 15px; /* Update the margin-top value as needed */
-            margin-left: 10px; /* Add a small amount of empty space between Descriptors and Profile Picture */
-            margin-right: -50px;
+            margin-top: 15px;
+            margin-right: 10px; /* Add some space between Profile Picture and Text */
+            margin-left: -50px; /* Move Profile Picture to the left */
         }
         
         nav a {
@@ -65,16 +59,7 @@
 <body>
     <main>
         <aside>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="presentations.html">Presentations</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
-                </ul>
-            </nav>
+            <img src="profile_picture.png" alt="Profile Picture">
         </aside>
         <section class="section-content">
             <h1>Lucas Vaughan, M.S.</h1>
@@ -82,7 +67,6 @@
                 Ecologist | Environmental Scientist<br>
                 Outdoor Enthusiast</p>
         </section>
-        <img src="profile_picture.png" alt="Profile Picture">
     </main>
 </body>
 </html>
