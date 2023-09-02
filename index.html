@@ -54,15 +54,15 @@
 
         /* Home Section Image Styles */
         .home-section .image-container {
-            display: flex;
-            flex-wrap: wrap; /* Wrap the images to the next row */
-            justify-content: flex-start; /* Start from the left */
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columns for 2 rows */
+            gap: 10px; /* Add spacing between images */
+            margin-top: 10px; /* Add margin to separate from the text */
         }
 
         .home-section .image-container img {
             width: 200px; /* Set the same width as Profile Picture */
             height: 200px; /* Set the same height as Profile Picture */
-            margin: 10px; /* Add spacing between images */
         }
         
         /* Descriptors */
