@@ -7,6 +7,8 @@
         body {
             background-color: #111; /* Update background color to space black or charcoal */
             color: #fff; /* Update font color to white */
+            margin: 0;
+            padding: 0;
         }
         .contact-link {
             text-decoration: underline;
@@ -18,38 +20,86 @@
             color: #fff; /* Set text color to white */
             cursor: pointer;
         }
+        
+        /* Sections */
+        section {
+            flex: 1;
+            margin-left: -45%; /* Adjust this negative margin to move Sections to the left of the vertical line */
+            margin-right: 10px; /* Optionally, add margin-right */
+        }
+        
+        /* Profile Picture Styles */
+        img[src="profile_picture.png"] {
+            width: 200px; /* Set the desired width */
+            height: 200px; /* Set the desired height */
+            margin-top: 2%;
+            margin-left: -92.5%; /* Adjust the spacing as needed */
+        }
+
+        /* Home Section Image Styles */
+        .home-section .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next row */
+            justify-content: flex-start; /* Align images to the left */
+            margin-left: 1.65%;
+            margin-bottom: 10px; /* Add margin between rows */
+            margin-top: -60px; /* Adjust this value to move the rows up */
+        }
+
+        .home-section .image-row {
+            display: flex;
+            gap: 10px; /* Add spacing between images */
+            margin-left: 40.45%;
+            margin-bottom: 10px; /* Add margin between rows */
+        }
+
+        .home-section .image-row img {
+            width: 320px; /* Set the same width as Profile Picture */
+            height: 220px; /* Set the same height as Profile Picture */
+            margin-left: 5%;
+            margin-right: 2px; /* Add right margin to separate images horizontally */
+        }
     </style>
 </head>
 <body>
-    <h1>About Me</h1>
-    <p>
-    Hi, I'm Luke, the creator of this website. I'm an analytical thinker and problem solver. I have a passion for applying mathematical/statistical/computational techniques to solve problems in ecology and environmental science. I'm particularly interested in spatial ecology, spatial data, pattern formation, carbon dynamics, biodiversity, and ecological disturbances.
-    </p>
-    <p>        
-    I also have a passion for exposition. I have designed several <a class="presentations-link" href="https://lvaughan33.github.io/Personal-Website/presentations.html">presentations</a> to showcase plots and figures from my projects. I can present to an audience of non-experts, by putting my explanations in layman's terms, or to a panel of experts (for example, a thesis committee).
-    </p>
-    <p>
-    My work and personal life both reflect a love of nature. I enjoy diving into outdoor activities in my free time. Some of my hobbies include hiking, biking, camping, wakesurfing, and snowboarding.
-    </p>
-    <p>
-    I'm a team player who loves to work with others sharing my interests. If you would like to get in contact with me, click <a class="contact-link" href="https://lvaughan33.github.io/Personal-Website/contact.html">here</a>.
-    </p>
-    
-    <!-- Include Section and Vertical Line from index.html -->
-    <section class="section-content">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="presentations.html">Presentations</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="technical_writing.html">Technical Writing</a></li>
-                <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
-            </ul>
-        </nav>
-    </section>
+    <main>
+        <!-- Sections -->
+        <section class="section-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical_writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <section class="vertical-line"></section>
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
+        <!-- Profile Picture -->
+        <img src="profile_picture.png" alt="Profile Picture">
+        
+        <!-- About Me Section -->
+        <section class="section-content home-section">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Luke, the creator of this website. I'm an analytical thinker and problem solver. I have a passion for applying mathematical/statistical/computational techniques to solve problems in ecology and environmental science. I'm particularly interested in spatial ecology, spatial data, pattern formation, carbon dynamics, biodiversity, and ecological disturbances.
+            </p>
+            <p>        
+                I also have a passion for exposition. I have designed several <a class="presentations-link" href="https://lvaughan33.github.io/Personal-Website/presentations.html">presentations</a> to showcase plots and figures from my projects. I can present to an audience of non-experts, by putting my explanations in layman's terms, or to a panel of experts (for example, a thesis committee).
+            </p>
+            <p>
+                My work and personal life both reflect a love of nature. I enjoy diving into outdoor activities in my free time. Some of my hobbies include hiking, biking, camping, wakesurfing, and snowboarding.
+            </p>
+            <p>
+                I'm a team player who loves to work with others sharing my interests. If you would like to get in contact with me, click <a class="contact-link" href="https://lvaughan33.github.io/Personal-Website/contact.html">here</a>.
+            </p>
+        </section>
+    </main>
 </body>
 </html>
