@@ -14,42 +14,24 @@
         
         main {
             display: flex;
-            align-items: center; /* Center content vertically */
+            align-items: flex-start;
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
             padding: 20px;
+            position: relative; /* Add this to make absolute positioning work */
         }
 
-        /* Vertical line */
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%; /* Adjust left position to center the line */
-            width: 1px;
-            background-color: #fff;
-        }
-
-        /* Sections */
-        section {
-            flex: 1;
-            padding: 10px; /* Add some padding to separate content */
-        }
-
-        /* Profile Picture */
+        /* Adjust the position of the Profile Picture */
         img {
-            width: 200px; /* Adjust Profile Picture width */
-            height: 200px; /* Adjust Profile Picture height */
-            margin-left: 10px; /* Add some space between Profile Picture and Text */
+            width: 200px;
+            margin-top: 15px;
+            margin-left: 20px; /* Move Profile Picture to the left */
         }
 
-        /* Descriptors */
-        aside {
+        section {
             color: #fff; /* Update font color for the sections to white */
             flex: 1; /* Allow sections to grow to fill available space */
-            padding-left: 20px; /* Add some padding to separate content */
         }
         
         h1 {
@@ -66,6 +48,23 @@
         
         nav a {
             color: #fff; /* Update font color for navigation links to white */
+        }
+
+        /* Add vertical line here */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 220px; /* Adjust the left position as needed */
+            width: 1px;
+            background-color: #fff;
+        }
+
+        /* Descriptors */
+        aside {
+            width: 200px; /* Adjust the width of the aside section */
+            margin-right: 20px; /* Add some space between Profile Picture and Text */
         }
     </style>
 </head>
@@ -86,14 +85,11 @@
             </nav>
         </section>
 
-        <!-- Vertical Line -->
-        <section class="vertical-line"></section>
-
         <!-- Profile Picture -->
         <img src="profile_picture.png" alt="Profile Picture">
         
         <!-- Descriptors -->
-        <aside class="section-content">
+        <aside>
             <h1>Lucas Vaughan, M.S.</h1>
             <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
                 Quantitative Ecologist | Environmental Scientist<br>
