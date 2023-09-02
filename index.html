@@ -40,10 +40,22 @@
 
         /* Profile Picture */
         img {
-            width: 200px; /* Adjust Profile Picture width */
-            height: 200px; /* Adjust Profile Picture height */
+            max-width: 100%; /* Ensure images don't exceed their container width */
+            height: auto;
+        }
+
+        /* Profile Picture Styles */
+        img[src="profile_picture.png"] {
+            width: 200px; /* Set the desired width */
+            height: 200px; /* Set the desired height */
             margin-top: 2%;
-            margin-left: -94%; /* Add some space between Profile Picture and Text */
+            margin-left: -94%; /* Adjust the spacing as needed */
+        }
+
+        /* Home Section Image Styles */
+        .home-section .image-container img {
+            width: 200px; /* Set the same width as Profile Picture */
+            height: 200px; /* Set the same height as Profile Picture */
         }
 
         /* Descriptors */
@@ -70,42 +82,6 @@
         nav a {
             color: #fff; /* Update font color for navigation links to white */
         }
-
-        <!-- Home Section -->
-        <section class="section-content">
-            <h2>Home</h2>
-            <div class="image-container">
-                <img src="figures/figure1.png" alt="Image 1">
-                <img src="figures/figure2.png" alt="Image 2">
-                <img src="figures/figure3.png" alt="Image 3">
-                <img src="figures/figure4.png" alt="Image 4">
-                <img src="figures/figure5.png" alt="Image 5">
-                <img src="figures/figure6.png" alt="Image 6">
-                <img src="figures/figure7.png" alt="Image 7">
-                <img src="figures/figure8.png" alt="Image 8">
-            </div>
-        </section>
-
-        /* CSS Styles for Profile Picture and Home Section Images */
-        img {
-            max-width: 100%; /* Ensure images don't exceed their container width */
-            height: auto;
-        }
-
-        /* Profile Picture Styles */
-        img[src="profile_picture.png"] {
-            width: 200px; /* Set the desired width */
-            height: 200px; /* Set the desired height */
-            margin-top: 2%;
-            margin-left: -94%; /* Adjust the spacing as needed */
-        }
-
-        /* Home Section Image Styles */
-        .home-section .image-container img {
-            width: 200px; /* Set the same width as Profile Picture */
-            height: 200px; /* Set the same height as Profile Picture */
-        }
-        
     </style>
 </head>
 <body>
@@ -139,5 +115,20 @@
                 Outdoor Enthusiast</p>
         </aside>
     </main>
+
+    <!-- Home Section -->
+    <section class="section-content home-section">
+        <h2>Home</h2>
+        <div class="image-container">
+            <img src="figures/figure1.png" alt="Image 1">
+            <img src="figures/figure2.png" alt="Image 2">
+            <img src="figures/figure3.png" alt="Image 3">
+            <img src="figures/figure4.png" alt="Image 4">
+            <img src="figures/figure5.png" alt="Image 5">
+            <img src="figures/figure6.png" alt="Image 6">
+            <img src="figures/figure7.png" alt="Image 7">
+            <img src="figures/figure8.png" alt="Image 8">
+        </div>
+    </section>
 </body>
 </html>
