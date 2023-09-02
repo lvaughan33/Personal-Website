@@ -27,7 +27,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 0;
+            left: 50%; /* Adjust left position to center the line */
             width: 1px;
             background-color: #fff;
         }
@@ -48,7 +48,7 @@
         /* Descriptors */
         aside {
             color: #fff; /* Update font color for the sections to white */
-            flex: 2; /* Allow sections to grow to fill available space */
+            flex: 1; /* Allow sections to grow to fill available space */
             padding-left: 20px; /* Add some padding to separate content */
         }
         
@@ -71,9 +71,6 @@
 </head>
 <body>
     <main>
-        <!-- Vertical Line -->
-        <section class="vertical-line"></section>
-
         <!-- Sections -->
         <section class="section-content">
             <nav>
@@ -88,6 +85,9 @@
                 </ul>
             </nav>
         </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
 
         <!-- Profile Picture -->
         <img src="profile_picture.png" alt="Profile Picture">
