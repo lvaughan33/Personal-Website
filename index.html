@@ -21,14 +21,14 @@
             padding: 20px;
         }
 
-        /* Adjust the position of the Profile Picture */
-        img {
-            width: 200px;
-            margin-top: 15px;
-            margin-left: 20px; /* Move Profile Picture to the left */
+        /* Sections */
+        section {
+            width: 200px; /* Adjust the width of the section */
+            margin-right: 20px; /* Add some space between Profile Picture and Text */
         }
 
-        section {
+        /* Descriptors */
+        aside {
             color: #fff; /* Update font color for the sections to white */
             flex: 1; /* Allow sections to grow to fill available space */
         }
@@ -59,29 +59,12 @@
             width: 1px;
             background-color: #fff;
         }
-
-        /* Descriptors */
-        aside {
-            width: 200px; /* Adjust the width of the aside section */
-            margin-right: 20px; /* Add some space between Profile Picture and Text */
-        }
     </style>
 </head>
 <body>
     <main>
         <!-- Sections -->
         <section class="section-content">
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
-                Quantitative Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </section>
-
-        <!-- Profile Picture -->
-        <img src="profile_picture.png" alt="Profile Picture">
-        
-        <!-- Descriptors -->
-        <aside>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -93,6 +76,20 @@
                     <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
                 </ul>
             </nav>
+        </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
+        <!-- Profile Picture -->
+        <img src="profile_picture.png" alt="Profile Picture">
+        
+        <!-- Descriptors-->
+        <aside class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
+                Quantitative Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
         </aside>
     </main>
 </body>
