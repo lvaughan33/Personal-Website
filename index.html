@@ -10,6 +10,8 @@
             color: #fff; /* Update font color to white */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: flex-start; /* Align content to the left */
         }
         
         main {
@@ -32,7 +34,6 @@
         section {
             color: #fff; /* Update font color for the sections to white */
             flex: 1; /* Allow sections to grow to fill available space */
-            margin-left: 60px; /* Move Sections 2.5 inches to the left (300 pixels) */
             margin-top: 0; /* Reset top margin */
             position: relative; /* Add this to make absolute positioning work */
         }
@@ -59,9 +60,10 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 40px; /* Move the vertical line 2 inches to the left (240 pixels) */
+            left: 0; /* Extend the vertical line from the left edge */
             width: 1px;
             background-color: #fff;
+            z-index: 1; /* Ensure the line is above the content */
         }
 
         /* Descriptors */
