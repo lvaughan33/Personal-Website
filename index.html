@@ -21,10 +21,30 @@
             padding: 20px;
         }
 
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 220px; /* Adjust the left position as needed */
+            width: 1px;
+            background-color: #fff;
+        }
+
         /* Sections */
         section {
             width: 200px; /* Adjust the width of the section */
             margin-right: 20px; /* Add some space between Profile Picture and Text */
+        }
+
+        /* Profile Picture */
+        img {
+            width: 200px; /* Adjust Profile Picture width */
+            height: 200px; /* Adjust Profile Picture height */
+            margin-top: 15px;
+            margin-right: 10px; /* Add some space between Profile Picture and Text */
+            margin-left: 10px; /* Adjust margin to separate from the vertical line */
         }
 
         /* Descriptors */
@@ -48,30 +68,13 @@
         nav a {
             color: #fff; /* Update font color for navigation links to white */
         }
-
-        /* Vertical line */
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 220px; /* Adjust the left position as needed */
-            width: 1px;
-            background-color: #fff;
-        }
-
-        /* Profile Picture */
-        img {
-            width: 200px; /* Adjust Profile Picture width */
-            height: 200px; /* Adjust Profile Picture height */
-            margin-top: 15px;
-            margin-right: 10px; /* Add some space between Profile Picture and Text */
-            margin-left: 10px; /* Adjust margin to separate from the vertical line */
-        }
     </style>
 </head>
 <body>
     <main>
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
         <!-- Sections -->
         <section class="section-content">
             <nav>
@@ -86,9 +89,6 @@
                 </ul>
             </nav>
         </section>
-
-        <!-- Vertical Line -->
-        <section class="vertical-line"></section>
 
         <!-- Profile Picture -->
         <img src="profile_picture.png" alt="Profile Picture">
