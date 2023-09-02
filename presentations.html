@@ -15,12 +15,59 @@
         a {
             color: #fff;
             text-decoration: underline; /* Add underlining to all links */
+            cursor: pointer;
+        }
+        
+        main {
+            display: flex;
+            max-width: 800px;
+            margin: 40px auto 0; /* Adjust the top margin to move sections down */
+            background-color: #111; /* Update background color to space black or charcoal */
+            padding: 0;
+        }
+
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15%; 
+            width: 1px;
+            background-color: #fff;
+        }
+
+        /* Sections */
+        section {
+            flex: 1;
+            margin-left: -45%; /* Adjust this negative margin to move Sections to the left of the vertical line */
+            margin-right: 10px; /* Optionally, add margin-right */
+            color: #fff; /* Set font color to white */
         }
     </style>
 </head>
 <body>
     <main>
+        <!-- Sections -->
         <section class="section-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical_writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
+        <!-- Presentations Section -->
+        <section>
             <h1>Presentations</h1>
             <ul>
                 <li><a href="presentations/presentation1.pdf" target="_blank">Modeling Carbon Dynamics Using FACE Data from Duke Forest</a></li>
