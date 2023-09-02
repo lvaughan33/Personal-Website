@@ -37,7 +37,14 @@
             width: 1px;
             background-color: #fff;
         }
-        
+
+        /* Adjust the position of the Profile Picture */
+        img {
+            width: 200px;
+            margin-top: 15px;
+            margin-left: 20px; /* Move Profile Picture to the left */
+        }
+
         section {
             color: #fff; /* Update font color for the sections to white */
             flex: 1; /* Allow sections to grow to fill available space */
@@ -55,11 +62,6 @@
             white-space: pre-line; /* Preserve line breaks */
         }
         
-        img {
-            width: 200px;
-            margin-top: 15px;
-        }
-        
         nav a {
             color: #fff; /* Update font color for navigation links to white */
         }
@@ -67,6 +69,20 @@
 </head>
 <body>
     <main>
+        <section class="section-content">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
+                Quantitative Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </section>
+
+        <!-- Add vertical line here -->
+        <div style="border-left: 1px solid #fff; height: 100vh; margin: 0 20px;"></div>
+
+        <!-- Profile Picture -->
+        <img src="profile_picture.png" alt="Profile Picture">
+        
+        <!-- Descriptors -->
         <aside>
             <nav>
                 <ul>
@@ -80,13 +96,6 @@
                 </ul>
             </nav>
         </aside>
-        <section class="section-content">
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
-                Quantitative Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </section>
     </main>
-    <img src="profile_picture.png" alt="Profile Picture">
 </body>
 </html>
