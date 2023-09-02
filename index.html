@@ -20,6 +20,19 @@
             background-color: #111; /* Update background color to space black or charcoal */
             padding: 20px;
         }
+
+        main {
+            position: relative; /* Set position to relative */
+        }
+
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%; /* Adjust the position as needed */
+            border-left: 1px solid #fff; /* Thin white vertical line */
+        }
         
         aside {
             margin-right: 50px; /* Add some space between Profile Picture and Text */
