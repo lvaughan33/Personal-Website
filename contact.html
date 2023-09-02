@@ -5,10 +5,61 @@
     <style>
         /* Add your custom styles here */
         body {
+            font-family: Arial, sans-serif;
             background-color: #111; /* Update background color to space black or charcoal */
             color: #fff; /* Update font color to white */
+            margin: 0;
+            padding: 0;
         }
-        .linkedin-link {
+
+        main {
+            display: flex;
+            max-width: 800px;
+            margin: 40px auto 0; /* Adjust the top margin to move sections down */
+            background-color: #111; /* Update background color to space black or charcoal */
+            padding: 0;
+        }
+
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15%;
+            width: 1px;
+            background-color: #fff;
+        }
+
+        /* Sections */
+        section {
+            flex: 1;
+            margin-left: -45%; /* Adjust this negative margin to move Sections to the left of the vertical line */
+            margin-right: 10px; /* Optionally, add margin-right */
+            color: #fff; /* Set font color to white */
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            flex: 1; /* Allow section to grow to fill available space */
+            padding-left: 10px; /* Add some padding to separate content */
+            margin-top: -10px; /* Adjust this value to move the section up */
+            margin-left: 2%;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.2; /* Decrease the line height for less spacing between paragraphs */
+            white-space: pre-line; /* Preserve line breaks */
+        }
+
+        /* Style for clickable links */
+        a {
             text-decoration: underline;
             color: #fff; /* Set text color to white */
             cursor: pointer;
@@ -16,7 +67,30 @@
     </style>
 </head>
 <body>
-    <h1>Contact</h1>
-    <p>If you would like to get in contact with me, please send me a message on <a class="linkedin-link" href="https://www.linkedin.com/in/lvaughan33/" target="_blank">LinkedIn</a> or email me at lucasvaughan4@gmail.com.</p>
+    <main>
+        <!-- Sections -->
+        <section class="section-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="presentations.html">Presentations</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="technical_writing.html">Technical Writing</a></li>
+                    <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h1>Contact</h1>
+            <p>If you would like to get in contact with me, please send me a message on <a class="linkedin-link" href="https://www.linkedin.com/in/lvaughan33/" target="_blank">LinkedIn</a> or email me at lucasvaughan4@gmail.com.</p>
+        </section>
+    </main>
 </body>
 </html>
