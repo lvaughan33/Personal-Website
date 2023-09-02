@@ -75,6 +75,31 @@
             margin-left: 5%;
             margin-right: 5px; /* Add right margin to separate images horizontally */
         }
+
+        /* Resize specific images in the first row */
+        .home-section .image-row:nth-child(1) img:nth-child(1),
+        .home-section .image-row:nth-child(1) img:nth-child(2) {
+            width: 300px; /* Set the desired width for the first and fourth images */
+            height: 280px;
+        
+        .home-section .image-row:nth-child(1) img:nth-child(3) {
+            width: 200px; /* Set the desired width for the first and fourth images */
+            height: 200px;
+        }
+
+        .home-section .image-row:nth-child(1) img:nth-child(4) {
+            width: 200px; /* Set the desired width for the first and fourth images */
+            height: 225px;
+        }
+
+        /* Resize specific images in the second row */
+        .home-section .image-row:nth-child(2) img:nth-child(1),
+        .home-section .image-row:nth-child(2) img:nth-child(2),
+        .home-section .image-row:nth-child(2) img:nth-child(3),
+        .home-section .image-row:nth-child(2) img:nth-child(4) {
+            width: 225px; /* Set the desired width for the second and third images */
+            height: 200px;
+        }
         
         /* Descriptors */
         aside {
