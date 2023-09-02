@@ -14,66 +14,55 @@
         
         main {
             display: flex;
-            align-items: center; /* Center content vertically */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
             padding: 20px;
-        }
-
-        main {
-            display: flex;
-            align-items: flex-start;
-            max-width: 800px;
-            margin: 40px auto 0; /* Adjust the top margin to move sections down */
-            margin-left: 20px;
-            background-color: #111; /* Update background color to space black or charcoal */
-            padding: 20px;
-            position: relative; /* Set position to relative */
-        }
-
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: calc(50% - 1px); /* Adjust the position to center it */
-            width: 1px; /* Thin vertical line */
-            background-color: #fff; /* White color */
         }
         
         aside {
             margin-right: 50px; /* Add some space between Profile Picture and Text */
         }
+
+        /* Add a vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: calc(50% - 1px);
+            width: 1px;
+            background-color: #fff;
+        }
         
         section {
-            color: #fff; /* Update font color for the sections to white */
-            margin-top: 0; /* Reset margin-top to align with the top of Profile Picture */
+            color: #fff;
+            margin-top: 0;
         }
         
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
-            text-align: left; /* Align text to the left */
+            text-align: left;
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
             text-align: left;
-            display: block; /* Display as a block to allow line breaks */
-            white-space: pre-line; /* Preserve line breaks */
+            display: block;
+            white-space: pre-line;
         }
         
         img {
             width: 200px;
             margin-top: 15px;
-            margin-right: 10px; /* Add some space between Profile Picture and Text */
-            margin-left: -50px; /* Move Profile Picture to the left */
+            margin-right: 10px;
+            margin-left: -50px;
         }
         
         nav a {
-            color: #fff; /* Update font color for navigation links to white */
+            color: #fff;
         }
     </style>
 </head>
@@ -91,8 +80,6 @@
                     <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
                 </ul>
             </nav>
-        </aside>
-            <img src="profile_picture.png" alt="Profile Picture">
         </aside>
         <section class="section-content">
             <h1>Lucas Vaughan, M.S.</h1>
