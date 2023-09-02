@@ -22,7 +22,7 @@
         }
         
         aside {
-            margin-right: 50px; /* Add some space between Profile Picture and Text */
+            margin-right: 20px; /* Add some space between Profile Picture and Text */
         }
 
         /* Add a vertical line */
@@ -31,40 +31,35 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: calc(50% - 1px);
+            left: 50px; /* Adjust the left position as needed */
             width: 1px;
             background-color: #fff;
         }
         
         section {
-            color: #fff;
-            margin-top: 0;
+            color: #fff; /* Update font color for the sections to white */
         }
         
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
-            text-align: left;
         }
         
         p {
             font-size: 18px;
             line-height: 1.5;
-            text-align: left;
-            display: block;
-            white-space: pre-line;
+            display: block; /* Display as a block to allow line breaks */
+            white-space: pre-line; /* Preserve line breaks */
         }
         
         img {
             width: 200px;
-            height: 200px; /* Set height and width to make the image square */
             margin-top: 15px;
             margin-right: 10px;
-            margin-left: -50px;
         }
         
         nav a {
-            color: #fff;
+            color: #fff; /* Update font color for navigation links to white */
         }
     </style>
 </head>
@@ -83,9 +78,8 @@
                 </ul>
             </nav>
         </aside>
-        <!-- Add your square profile picture here -->
-        <img src="profile_picture.png" alt="Profile Picture">
         <section class="section-content">
+            <img src="profile_picture.png" alt="Profile Picture">
             <h1>Lucas Vaughan, M.S.</h1>
             <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
                 Quantitative Ecologist | Environmental Scientist<br>
