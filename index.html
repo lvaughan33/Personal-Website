@@ -10,34 +10,48 @@
             color: #fff; /* Update font color to white */
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: flex-start; /* Align content to the left */
         }
         
         main {
             display: flex;
-            align-items: flex-start;
+            align-items: center; /* Center content vertically */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
             padding: 20px;
-            position: relative; /* Add this to make absolute positioning work */
         }
 
-        /* Adjust the position of the Profile Picture */
-        img {
-            width: 200px;
-            margin-top: 15px;
-            margin-left: 20px; /* Move Profile Picture to the left */
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%; /* Adjust left position to center the line */
+            width: 1px;
+            background-color: #fff;
         }
 
+        /* Sections */
         section {
+            flex: 1;
+            padding: 10px; /* Add some padding to separate content */
+        }
+
+        /* Profile Picture */
+        img {
+            width: 200px; /* Adjust Profile Picture width */
+            height: 200px; /* Adjust Profile Picture height */
+            margin-left: 10px; /* Add some space between Profile Picture and Text */
+        }
+
+        /* Descriptors */
+        aside {
             color: #fff; /* Update font color for the sections to white */
             flex: 1; /* Allow sections to grow to fill available space */
-            margin-top: 0; /* Reset top margin */
-            position: relative; /* Add this to make absolute positioning work */
+            padding-left: 20px; /* Add some padding to separate content */
         }
-
+        
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
@@ -52,24 +66,6 @@
         
         nav a {
             color: #fff; /* Update font color for navigation links to white */
-        }
-
-        /* Add vertical line here */
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0; /* Extend the vertical line from the left edge */
-            width: 1px;
-            background-color: #fff;
-            z-index: 1; /* Ensure the line is above the content */
-        }
-
-        /* Descriptors */
-        aside {
-            width: 200px; /* Adjust the width of the aside section */
-            margin-right: 20px; /* Add some space between Profile Picture and Text */
         }
     </style>
 </head>
@@ -90,11 +86,14 @@
             </nav>
         </section>
 
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
         <!-- Profile Picture -->
         <img src="profile_picture.png" alt="Profile Picture">
         
         <!-- Descriptors -->
-        <aside>
+        <aside class="section-content">
             <h1>Lucas Vaughan, M.S.</h1>
             <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
                 Quantitative Ecologist | Environmental Scientist<br>
