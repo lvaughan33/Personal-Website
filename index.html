@@ -74,14 +74,14 @@
         /* Home Section Image Styles */
         .home-section .image-container {
             display: flex;
-            flex-direction: column; /* Stack rows vertically */
-            align-items: flex-start; /* Align rows to the left */
-        }
-
-        .home-section .image-row {
-            display: flex;
+            flex-wrap: wrap; /* Allow images to wrap to the next row */
             justify-content: flex-start; /* Start images from the left */
             gap: 10px; /* Add some spacing between images */
+        }
+
+        .home-section .image-container img {
+            width: 200px; /* Set the same width as Profile Picture */
+            height: 200px; /* Set the same height as Profile Picture */
         }
 
         /* CSS Styles for Profile Picture and Home Section Images */
@@ -129,18 +129,14 @@
     <section class="section-content home-section">
         <h2>Home</h2>
         <div class="image-container">
-            <div class="image-row">
-                <img src="figures/figure1.png" alt="Image 1">
-                <img src="figures/figure2.png" alt="Image 2">
-                <img src="figures/figure3.png" alt="Image 3">
-                <img src="figures/figure4.png" alt="Image 4">
-            </div>
-            <div class="image-row">
-                <img src="figures/figure5.png" alt="Image 5">
-                <img src="figures/figure6.png" alt="Image 6">
-                <img src="figures/figure7.png" alt="Image 7">
-                <img src="figures/figure8.png" alt="Image 8">
-            </div>
+            <img src="figures/figure1.png" alt="Image 1">
+            <img src="figures/figure2.png" alt="Image 2">
+            <img src="figures/figure3.png" alt="Image 3">
+            <img src="figures/figure4.png" alt="Image 4">
+            <img src="figures/figure5.png" alt="Image 5">
+            <img src="figures/figure6.png" alt="Image 6">
+            <img src="figures/figure7.png" alt="Image 7">
+            <img src="figures/figure8.png" alt="Image 8">
         </div>
     </section>
 </body>
