@@ -7,26 +7,32 @@
         body {
             background-color: #111; /* Update background color to space black or charcoal */
             color: #fff; /* Update font color to white */
-            font-size: 18px;
             margin: 0;
             padding: 0;
         }
-        .contact-link {
-            text-decoration: underline;
+        a {
             color: #fff; /* Set text color to white */
-            cursor: pointer;
-        }
-        .presentations-link {
             text-decoration: underline;
-            color: #fff; /* Set text color to white */
-            cursor: pointer;
         }
 
         /* Sections */
         section {
-            margin-left: 15%;
+            font-size: 18px;
+            flex: 1;
+            margin-left: 15%; /* Adjust this margin to match the placement in index.html */
             color: #fff; /* Set font color to white */
             margin-top: -1.5%; /* Adjust to match the vertical positioning of sections in index.html */
+        }
+
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15%; /* Adjust this value to align with the vertical line in index.html */
+            width: 1px;
+            background-color: #fff;
         }
     </style>
 </head>
@@ -52,19 +58,8 @@
 
         <!-- About Me Content -->
         <section>
-            <h1>About Me</h1>
-            <p>
-            I'm Luke, the creator of this website. I'm an analytical thinker and problem solver. I have a passion for applying mathematical/statistical/computational techniques to solve problems in ecology and environmental science. I'm particularly interested in spatial ecology, spatial data, pattern formation, carbon dynamics, biodiversity, and ecological disturbances.
-            </p>
-            <p>        
-            I also have a passion for exposition. I have designed several <a class="presentations-link" href="https://lvaughan33.github.io/Personal-Website/presentations.html">presentations</a> to showcase plots and figures from my projects. I can present to an audience of non-experts, by putting my explanations in layman's terms, or to a panel of experts (for example, a thesis committee).
-            </p>
-            <p>
-            My work and personal life both reflect a love of nature. I enjoy diving into outdoor activities in my free time. Some of my hobbies include hiking, biking, camping, wakesurfing, and snowboarding.
-            </p>
-            <p>
-            I'm a team player who loves to work with others sharing my interests. If you would like to get in contact with me, click <a class="contact-link" href="https://lvaughan33.github.io/Personal-Website/contact.html">here</a>.
-            </p>
+            <!-- Include about_me.html here -->
+            <!--#include virtual="about_me.html" -->
         </section>
     </main>
 </body>
