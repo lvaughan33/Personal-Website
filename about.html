@@ -2,64 +2,37 @@
 <html>
 <head>
     <title>About Me</title>
-    <style>
-        /* Add your custom styles here */
-        body {
-            background-color: #111; /* Update background color to space black or charcoal */
-            color: #fff; /* Update font color to white */
-            margin: 0;
-            padding: 0;
-        }
-        a {
-            color: #fff; /* Set text color to white */
-            text-decoration: underline;
-        }
-
-        /* Sections */
-        section {
-            font-size: 18px;
-            flex: 1;
-            margin-left: 15%; /* Adjust this margin to match the placement in index.html */
-            color: #fff; /* Set font color to white */
-            margin-top: -5px; /* Adjust to match the vertical positioning of sections in index.html */
-        }
-
-        /* Vertical line */
-        main::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 15%; /* Adjust this value to align with the vertical line in index.html */
-            width: 1px;
-            background-color: #fff;
-        }
-    </style>
 </head>
 <body>
+    <!-- Include the common layout -->
+    <div id="common-layout-container"></div>
+    <script>
+        // Load the common layout using JavaScript
+        const commonLayoutContainer = document.getElementById('common-layout-container');
+        fetch('common_layout.html')
+            .then(response => response.text())
+            .then(html => {
+                commonLayoutContainer.innerHTML = html;
+            });
+    </script>
+
+    <!-- Your unique content for the About Me page goes here -->
     <main>
         <!-- Sections -->
         <section class="section-content">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="presentations.html">Presentations</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="technical_writing.html">Technical Writing</a></li>
-                    <li><a href="jupyter_notebooks.html">Jupyter Notebooks</a></li>
-                </ul>
-            </nav>
-        </section>
-
-        <!-- Vertical Line -->
-        <section class="vertical-line"></section>
-
-        <!-- About Me Content -->
-        <section>
-            <!-- Include about_me.html here -->
-            <!--#include virtual="about_me.html" -->
+            <h2>About Me</h2>
+            <p>
+                I'm Luke, the creator of this website. I'm an analytical thinker and problem solver. I have a passion for applying mathematical/statistical/computational techniques to solve problems in ecology and environmental science. I'm particularly interested in spatial ecology, spatial data, pattern formation, carbon dynamics, biodiversity, and ecological disturbances.
+            </p>
+            <p>        
+                I also have a passion for exposition. I have designed several <a class="presentations-link" href="https://lvaughan33.github.io/Personal-Website/presentations.html">presentations</a> to showcase plots and figures from my projects. I can present to an audience of non-experts, by putting my explanations in layman's terms, or to a panel of experts (for example, a thesis committee).
+            </p>
+            <p>
+                My work and personal life both reflect a love of nature. I enjoy diving into outdoor activities in my free time. Some of my hobbies include hiking, biking, camping, wakesurfing, and snowboarding.
+            </p>
+            <p>
+                I'm a team player who loves to work with others sharing my interests. If you would like to get in contact with me, click <a class="contact-link" href="https://lvaughan33.github.io/Personal-Website/contact.html">here</a>.
+            </p>
         </section>
     </main>
 </body>
