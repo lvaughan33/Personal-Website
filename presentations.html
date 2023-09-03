@@ -11,18 +11,38 @@
             margin: 0;
             padding: 0;
         }
-
+        
         a {
             color: #fff;
             text-decoration: underline; /* Add underlining to all links */
+            cursor: pointer;
+        }
+        
+        main {
+            display: flex;
+            max-width: 800px;
+            margin: 40px auto 0; /* Adjust the top margin to move sections down */
+            background-color: #111; /* Update background color to space black or charcoal */
+            padding: 0;
+        }
+
+        /* Vertical line */
+        main::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 15%; 
+            width: 1px;
+            background-color: #fff;
         }
 
         /* Sections */
         section {
-            font-size: 18px;
-            margin-left: 15%;
+            flex: 1;
+            margin-left: -45%; /* Adjust this negative margin to move Sections to the left of the vertical line */
+            margin-right: 10px; /* Optionally, add margin-right */
             color: #fff; /* Set font color to white */
-            margin-top: -1.5%; /* Adjust to match the vertical positioning of sections in index.html */
         }
     </style>
 </head>
@@ -46,7 +66,7 @@
         <!-- Vertical Line -->
         <section class="vertical-line"></section>
 
-        <!-- Presentations Content -->
+        <!-- Presentations Section -->
         <section>
             <h1>Presentations</h1>
             <ul>
