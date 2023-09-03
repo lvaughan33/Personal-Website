@@ -133,33 +133,21 @@
                 </ul>
             </nav>
         </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
+
+        <!-- Profile Picture -->
+        <img src="profile_picture.jpg" alt="Profile Picture">
+        
+        <!-- Descriptors -->
+        <aside class="section-content">
+            <h1 style="margin-bottom: 40px;">Lucas Vaughan, M.S.</h1>
+            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
+                Quantitative Ecologist | Environmental Scientist<br>
+                Outdoor Enthusiast</p>
+        </aside>
     </main>
-
-    <!-- Include the common layout -->
-    <div id="common-layout-container"></div>
-    <script>
-        // Load the common layout using JavaScript
-        const commonLayoutContainer = document.getElementById('common-layout-container');
-        fetch('common_layout.html')
-            .then(response => response.text())
-            .then(html => {
-                commonLayoutContainer.innerHTML = html;
-            });
-    </script>
-
-    <!-- Vertical Line -->
-    <section class="vertical-line"></section>
-
-    <!-- Profile Picture -->
-    <img src="profile_picture.jpg" alt="Profile Picture">
-    
-    <!-- Descriptors -->
-    <aside class="section-content">
-        <h1 style="margin-bottom: 40px;">Lucas Vaughan, M.S.</h1>
-        <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
-            Quantitative Ecologist | Environmental Scientist<br>
-            Outdoor Enthusiast</p>
-    </aside>
 
     <!-- Home Section -->
     <section class="section-content home-section">
