@@ -16,7 +16,7 @@
 
         main {
             display: flex;
-            flex-direction: column; /* Display content vertically on small screens */
+            flex-direction: row; /* Display content horizontally */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
@@ -24,23 +24,18 @@
         }
 
         /* Vertical line */
-        main::before {
+        .vertical-line {
             content: '';
-            display: block; /* Display the vertical line */
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 20%;
+            display: block;
+            flex: 1; /* Allow the line to take up available space */
             width: 1px;
             background-color: #fff;
         }
 
         /* Sections */
-        section {
+        .section-content {
             font-size: 18px;
             flex: 1;
-            margin-left: 10%; /* Adjust margin to move Sections to the left */
-            margin-right: 10px; /* Optionally, add margin-right */
             color: #fff; /* Set font color to white */
             margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
         }
@@ -48,8 +43,6 @@
         /* Profile Picture */
         .profile-picture {
             max-width: 100%; /* Ensure the image fits within the container */
-            margin-left: auto; /* Move the picture to the right on larger screens */
-            margin-right: auto;
         }
 
         /* Descriptors */
@@ -115,11 +108,12 @@
         /* Media Query for Small Screens */
         @media (max-width: 768px) {
             main {
+                flex-direction: column; /* Display content vertically on small screens */
                 max-width: 100%; /* Adjust the maximum width for small screens */
             }
 
             /* Hide the vertical line on small screens */
-            main::before {
+            .vertical-line {
                 display: none;
             }
 
@@ -137,10 +131,6 @@
 </head>
 <body>
     <main>
-        <!-- Vertical Line -->
-        <section class="vertical-line"></section>
-
-        
         <!-- Sections -->
         <section class="section-content">
             <nav>
@@ -156,6 +146,9 @@
             </nav>
         </section>
 
+        <!-- Vertical Line -->
+        <div class="vertical-line"></div>
+
         <!-- Home Section -->
         <section>
             <div class="profile-picture">
@@ -166,6 +159,26 @@
                 <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
                 <p>Quantitative Ecologist | Environmental Scientist</p>
                 <p>Outdoor Enthusiast</p>
+            </div>
+            <div class="figures">
+                <div class="figure">
+                    <img src="figures/figure1.png" alt="Figure 1">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure2.png" alt="Figure 2">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure3.png" alt="Figure 3">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure4.png" alt="Figure 4">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure5.png" alt="Figure 5">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure6.png" alt="Figure 6">
+                </div>
             </div>
         </section>
     </main>
