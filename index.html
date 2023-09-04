@@ -16,7 +16,6 @@
 
         main {
             display: flex;
-            flex-direction: row; /* Display content horizontally */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
@@ -25,11 +24,9 @@
 
         /* Vertical line */
         .vertical-line {
-            content: '';
-            display: block;
-            flex: 0; /* Prevent the line from growing and taking up space */
             width: 1px;
             background-color: #fff;
+            flex-shrink: 0; /* Prevent the line from growing and taking up space */
         }
 
         /* Sections */
@@ -37,7 +34,6 @@
             font-size: 18px;
             flex: 1;
             color: #fff; /* Set font color to white */
-            margin-left: 10%; /* Adjust margin to move Sections to the left */
             margin-right: 10px; /* Optionally, add margin-right */
             margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
         }
@@ -64,6 +60,14 @@
         .figure {
             flex-basis: calc(33.33% - 10px); /* Adjust figure width for different screen sizes */
             margin-bottom: 10px; /* Add margin at the bottom of figures */
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            flex: 1; /* Allow section to grow to fill available space */
+            padding-left: 10px; /* Add some padding to separate content */
+            margin-top: -10px; /* Adjust this value to move the section up */
+            margin-left: 0; /* Reset left margin for small screens */
         }
 
         h1 {
@@ -125,6 +129,9 @@
 </head>
 <body>
     <main>
+        <!-- Vertical Line -->
+        <div class="vertical-line"></div>
+
         <!-- Sections -->
         <section class="section-content">
             <nav>
@@ -139,10 +146,7 @@
                 </ul>
             </nav>
         </section>
-
-        <!-- Vertical Line -->
-        <div class="vertical-line"></div>
-
+        
         <!-- Home Section -->
         <section>
             <div class="profile-picture">
