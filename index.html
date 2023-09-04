@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lucas Vaughan, M.S.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <style>
         /* Add your custom styles here */
         body {
@@ -11,9 +13,10 @@
             margin: 0;
             padding: 0;
         }
-        
+
         main {
             display: flex;
+            flex-direction: column; /* Display content vertically on small screens */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
@@ -23,10 +26,11 @@
         /* Vertical line */
         main::before {
             content: '';
+            display: none; /* Hide the vertical line on small screens */
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 20%; 
+            left: 20%;
             width: 1px;
             background-color: #fff;
         }
@@ -35,76 +39,64 @@
         section {
             font-size: 18px;
             flex: 1;
-            margin-left: -37%; /* Adjust this negative margin to move Sections to the left of the vertical line */
+            margin-left: 0; /* Reset left margin for small screens */
             margin-right: 10px; /* Optionally, add margin-right */
             color: #fff; /* Set font color to white */
             margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
         }
 
         /* Profile Picture */
-        img {
-            max-width: 100%; /* Ensure images don't exceed their container width */
-            height: auto;
+        .profile-picture {
+            max-width: 100%; /* Ensure the image fits within the container */
+            margin-left: auto; /* Move the picture to the right on larger screens */
+            margin-right: auto;
         }
 
-        /* Profile Picture Styles */
-        img[src="profile_picture.jpg"] {
-            width: 200px; /* Set the desired width */
-            height: 200px; /* Set the desired height */
-            margin-top: 2%;
-            margin-left: -65%; /* Adjust the spacing as needed */
-        }
-
-        /* Home Section Figure Styles */
-        .home-section .image-container {
-            display: flex;
-            flex-wrap: wrap; /* Allow images to wrap to the next row */
-            justify-content: flex-start; /* Align images to the left */
-            margin-left: 5%;
-            margin-bottom: 10px; /* Add margin between rows */
-            margin-top: -80px; /* Adjust this value to move the rows up */
-        }
-
-        .home-section .image-row {
-            display: flex;
-            gap: 10px; /* Add spacing between images */
-            margin-left: 40.45%;
-            margin-bottom: 10px; /* Add margin between rows */
-        }
-
-        .home-section .image-row img {
-            width: 330px; 
-            height: 215px; 
-            margin-left: 5%;
-            margin-right: 2px; /* Add right margin to separate images horizontally */
-        }
-        
         /* Descriptors */
-        aside {
-            color: #fff; /* Update font color for the sections to white */
-            flex: 1; /* Allow sections to grow to fill available space */
-            padding-left: 10px; /* Add some padding to separate content */
-            margin-top: -2%;
-            margin-left: 2%;
+        .descriptors {
+            text-align: center; /* Center the descriptors */
+            margin-top: 10px; /* Add some space between profile picture and descriptors */
         }
 
-        aside p {
-            margin-top: 10px; /* Adjust the margin-top to control the vertical spacing between paragraphs */
+        /* Figures */
+        .figures {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 10px; /* Add space between descriptors and figures */
         }
-        
+
+        .figure {
+            flex-basis: calc(33.33% - 10px); /* Adjust figure width for different screen sizes */
+            margin-bottom: 10px; /* Add margin at the bottom of figures */
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            flex: 1; /* Allow section to grow to fill available space */
+            padding-left: 10px; /* Add some padding to separate content */
+            margin-top: -10px; /* Adjust this value to move the section up */
+            margin-left: 0; /* Reset left margin for small screens */
+        }
+
         h1 {
             font-size: 32px;
             margin-bottom: 10px;
         }
-        
+
         p {
             font-size: 18px;
-            line-height: 1.5;
-            display: block; /* Display as a block to allow line breaks */
+            line-height: 1.2; /* Decrease the line height for less spacing between paragraphs */
             white-space: pre-line; /* Preserve line breaks */
-            margin-bottom: 9px;
         }
-        
+
+        /* Style for clickable links */
+        a {
+            text-decoration: underline;
+            color: #fff; /* Set text color to white */
+            cursor: pointer;
+        }
+
         nav a {
             color: #fff; /* Update font color for navigation links to white */
         }
@@ -119,7 +111,28 @@
         nav ul li {
             margin-bottom: 9px; /* Add margin at the bottom to increase vertical space between sections */
         }
-        
+
+        /* Media Query for Small Screens */
+        @media (max-width: 768px) {
+            main {
+                max-width: 100%; /* Adjust the maximum width for small screens */
+            }
+
+            /* Hide the vertical line on small screens */
+            main::before {
+                display: none;
+            }
+
+            /* Reset margin for contact section on small screens */
+            .contact-section {
+                margin-left: 0;
+            }
+
+            /* Adjust figure width for small screens */
+            .figure {
+                flex-basis: calc(50% - 10px); /* Display two figures per row on small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,36 +155,29 @@
         <!-- Vertical Line -->
         <section class="vertical-line"></section>
 
-        <!-- Profile Picture -->
-        <img src="profile_picture.jpg" alt="Profile Picture">
-        
-        <!-- Descriptors -->
-        <aside class="section-content">
-            <h1 style="margin-bottom: 40px;">Lucas Vaughan, M.S.</h1>
-            <p>Mathematical Modeler | Data Analyst | Technical Writer<br>
-                Quantitative Ecologist | Environmental Scientist<br>
-                Outdoor Enthusiast</p>
-        </aside>
+        <!-- Home Section -->
+        <section>
+            <div class="profile-picture">
+                <img src="profile_picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="descriptors">
+                <p>Lucas Vaughan, M.S.</p>
+                <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
+                <p>Quantitative Ecologist | Environmental Scientist</p>
+                <p>Outdoor Enthusiast</p>
+            </div>
+            <div class="figures">
+                <div class="figure">
+                    <img src="figures/figure1.png" alt="Figure 1">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure2.png" alt="Figure 2">
+                </div>
+                <div class="figure">
+                    <img src="figures/figure3.png" alt="Figure 3">
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Home Section -->
-    <section class="section-content home-section">
-        <h2>Home</h2>
-        <div class="image-container">
-            <!-- First Row of Images -->
-            <div class="image-row">
-                <img src="figures/figure1.png" alt="Figure 1">
-                <img src="figures/figure2.png" alt="Figure 2">
-                <img src="figures/figure3.png" alt="Figure 3">
-            </div>
-            
-            <!-- Second Row of Images -->
-            <div class="image-row">
-                <img src="figures/figure4.png" alt="Figure 4">
-                <img src="figures/figure5.png" alt="Figure 5">
-                <img src="figures/figure6.png" alt="Figure 6">
-            </div>
-        </div>
-    </section>
 </body>
 </html>
