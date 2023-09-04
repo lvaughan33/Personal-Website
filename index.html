@@ -27,7 +27,7 @@
         .vertical-line {
             content: '';
             display: block;
-            flex: 1; /* Allow the line to take up available space */
+            flex: 0; /* Prevent the line from growing and taking up space */
             width: 1px;
             background-color: #fff;
         }
@@ -37,6 +37,8 @@
             font-size: 18px;
             flex: 1;
             color: #fff; /* Set font color to white */
+            margin-left: 10%; /* Adjust margin to move Sections to the left */
+            margin-right: 10px; /* Optionally, add margin-right */
             margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
         }
 
