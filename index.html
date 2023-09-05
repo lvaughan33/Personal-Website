@@ -16,6 +16,7 @@
 
         main {
             display: flex;
+            flex-direction: column; /* Display content vertically on small screens */
             max-width: 800px;
             margin: 40px auto 0; /* Adjust the top margin to move sections down */
             background-color: #111; /* Update background color to space black or charcoal */
@@ -28,7 +29,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            left: 10%; /* Move the vertical line 10% to the left */
+            left: 20%; /* Move the vertical line 20% to the left */
             width: 1px;
             background-color: #fff;
         }
@@ -37,36 +38,10 @@
         section {
             font-size: 18px;
             flex: 1;
-            margin-left: 0; /* Set margin-left to 0 to move Sections to the left of the vertical line */
+            margin-left: 0; /* Adjust margin to move Sections to the left of the vertical line */
             margin-right: 10px; /* Optionally, add margin-right */
             color: #fff; /* Set font color to white */
             margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
-        }
-
-        /* Profile Picture */
-        .profile-picture {
-            max-width: 100%; /* Ensure the image fits within the container */
-            margin-left: auto; /* Move the picture to the right on larger screens */
-            margin-right: auto;
-        }
-
-        /* Descriptors */
-        .descriptors {
-            text-align: center; /* Center the descriptors */
-            margin-top: 10px; /* Add some space between profile picture and descriptors */
-        }
-
-        /* Figures */
-        .figures {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 10px; /* Add space between descriptors and figures */
-        }
-
-        .figure {
-            flex-basis: calc(33.33% - 10px); /* Adjust figure width for different screen sizes */
-            margin-bottom: 10px; /* Add margin at the bottom of figures */
         }
 
         /* Contact Section Styles */
@@ -74,7 +49,7 @@
             flex: 1; /* Allow section to grow to fill available space */
             padding-left: 10px; /* Add some padding to separate content */
             margin-top: -10px; /* Adjust this value to move the section up */
-            margin-left: 0; /* Reset left margin for small screens */
+            margin-left: 2%;
         }
 
         h1 {
@@ -125,11 +100,6 @@
             .contact-section {
                 margin-left: 0;
             }
-
-            /* Adjust figure width for small screens */
-            .figure {
-                flex-basis: calc(50% - 10px); /* Display two figures per row on small screens */
-            }
         }
     </style>
 </head>
@@ -149,6 +119,9 @@
                 </ul>
             </nav>
         </section>
+
+        <!-- Vertical Line -->
+        <section class="vertical-line"></section>
 
         <!-- Home Section -->
         <section>
