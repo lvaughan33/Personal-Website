@@ -18,16 +18,25 @@ main {
     padding: 20px;
 }
 
-/* Create a vertical line using ::before pseudo-element */
+/* Vertical line */
 main::before {
     content: '';
-    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 15%; /* Adjust the left position for your layout */
+    left: 15%; /* Adjust this value to control the position of the vertical line */
     width: 1px;
     background-color: #fff;
+}
+
+/* Sections */
+section {
+    font-size: 18px;
+    flex: 1;
+    margin-left: 0; /* Set margin-left to 0 for Sections */
+    margin-right: 10px; /* Optionally, add margin-right */
+    color: #fff; /* Set font color to white */
+    margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
 }
 
 /* Style the navigation menu */
