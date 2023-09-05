@@ -30,6 +30,7 @@ main {
     width: 1px;
     background-color: #fff;
     margin-right: 5%; /* Add margin-right to create space between Vertical Line and Sections */
+    margin-left: 5%;
     position: absolute;
     top: 0;
     bottom: 0; /* Extend Vertical Line from top to bottom */
