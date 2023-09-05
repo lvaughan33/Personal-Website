@@ -25,7 +25,7 @@ main::before {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 15%; /* Move the vertical line 15% to the left */
+    left: 10%; /* Move the vertical line 10% to the left */
     width: 1px;
     background-color: #fff;
 }
