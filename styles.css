@@ -25,7 +25,7 @@ main::before {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 30%; /* Move the vertical line to the left */
+    left: 10px; /* Adjust left to add some space between the line and sections */
     width: 1px;
     background-color: #fff;
 }
@@ -35,28 +35,10 @@ section {
     font-size: 18px;
     flex: 1;
     color: #fff; /* Set font color to white */
-    left: 40%; /* Move the sections to the left */
+    margin-left: 10px; /* Add margin to move sections to the left */
+    margin-right: 10px; /* Optionally, add margin-right for spacing */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
-}
-
-/* Container for Sections and Vertical Line */
-.container {
-    display: flex;
-    align-items: flex-start; /* Align children at the top */
-}
-
-/* Sections */
-.section-content {
-    flex: 1; /* Allow sections to grow and take available space */
-    /* Other section styles */
-}
-
-/* Vertical Line */
-.vertical-line {
-    width: 1px;
-    background-color: #fff;
-    /* Other vertical line styles */
 }
 
 /* Styles for headings and paragraphs */
