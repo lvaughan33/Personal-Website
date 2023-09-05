@@ -12,7 +12,6 @@ main {
     display: flex;
     flex-direction: row; /* Display content horizontally */
     max-width: 95%; /* Adjust the maximum width for full-width display */
-    max-height: 95%;
     background-color: #111; /* Update background color to space black or charcoal */
     padding: 0;
     position: relative; /* Add relative positioning for absolute child elements */
