@@ -1,0 +1,70 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a common font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Center the main content */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Create a vertical line using ::before pseudo-element */
+main::before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%; /* Adjust the left position for your layout */
+    width: 1px;
+    background-color: #fff;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 5px;
+}
+
+/* Style individual sections */
+section {
+    flex: 1;
+    margin: 0 10px; /* Add space between sections */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    main::before {
+        display: block;
+        left: 10%; /* Adjust left position for smaller screens */
+    }
+
+    nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    section {
+        margin: 10px 0; /* Increase space between sections */
+    }
+}
