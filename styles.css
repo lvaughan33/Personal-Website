@@ -29,12 +29,12 @@ main {
 .vertical-line {
     width: 1px;
     background-color: #fff;
-    margin-right: 5%; /* Add margin-right to create space between Vertical Line and Sections */
-    margin-left: 5%;
+    margin-right: 5%;
+    margin-left: 10%; /* Move Vertical Line 10% to the left */
     position: absolute;
     top: 0;
-    bottom: 0; /* Extend Vertical Line from top to bottom */
-    left: 30%; /* Adjust the left position as needed */
+    bottom: 100%;
+    left: 20%; /* Adjust the left position as needed */
 }
 
 /* Sections */
@@ -70,6 +70,12 @@ a {
 /* Navigation menu styles */
 nav a {
     color: #fff; /* Update font color for navigation links to white */
+}
+
+/* Remove list item markers */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 /* List items (sections) */
