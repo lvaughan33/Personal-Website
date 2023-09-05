@@ -44,6 +44,7 @@ main {
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
     margin-left: 5%; /* Move Sections 5% to the right */
+    margin-top: 5%; /* Move Sections down by 5% */
 }
 
 /* Styles for headings and paragraphs */
