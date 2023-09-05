@@ -11,8 +11,7 @@ body {
 main {
     display: flex;
     flex-direction: row; /* Display content horizontally */
-    max-width: 800px;
-    margin: 40px auto 0; /* Adjust the top margin to move sections down */
+    max-width: 100%; /* Adjust the maximum width for full-width display */
     background-color: #111; /* Update background color to space black or charcoal */
     padding: 0;
     position: relative; /* Add relative positioning for absolute child elements */
@@ -23,6 +22,7 @@ main {
     display: flex;
     align-items: flex-start; /* Align children at the top */
     justify-content: flex-start; /* Align children to the left */
+    width: 100%; /* Occupy full width of the container */
 }
 
 /* Vertical line */
