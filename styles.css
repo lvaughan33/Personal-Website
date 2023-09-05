@@ -18,7 +18,6 @@ main {
     position: relative; /* Add relative positioning for absolute child elements */
 }
 
-/* Vertical line */
 /* Container for Sections and Vertical Line */
 .container {
     display: flex;
@@ -40,6 +39,7 @@ main {
     color: #fff; /* Set font color to white */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
+    margin-left: 0; /* Reset margin-left */
 }
 
 /* Styles for headings and paragraphs */
