@@ -40,6 +40,25 @@ section {
     padding: 0 10px; /* Add padding to sections for space */
 }
 
+/* Container for Sections and Vertical Line */
+.container {
+    display: flex;
+    align-items: flex-start; /* Align children at the top */
+}
+
+/* Sections */
+.section-content {
+    flex: 1; /* Allow sections to grow and take available space */
+    /* Other section styles */
+}
+
+/* Vertical Line */
+.vertical-line {
+    width: 1px;
+    background-color: #fff;
+    /* Other vertical line styles */
+}
+
 /* Styles for headings and paragraphs */
 h1 {
     font-size: 32px;
