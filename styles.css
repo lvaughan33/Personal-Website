@@ -19,24 +19,25 @@ main {
 }
 
 /* Vertical line */
-main::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 5%; /* Move the vertical line 5% to the left */
+/* Container for Sections and Vertical Line */
+.container {
+    display: flex;
+    align-items: flex-start; /* Align children at the top */
+    justify-content: flex-start; /* Align children to the left */
+}
+
+/* Vertical line */
+.vertical-line {
     width: 1px;
     background-color: #fff;
+    margin-right: 5%; /* Add margin-right to create space between Vertical Line and Sections */
 }
 
 /* Sections */
-section {
+.section-content {
     font-size: 18px;
     flex: 1;
     color: #fff; /* Set font color to white */
-    margin-left: 5%; /* Move the sections 5% to the left */
-    margin-right: 2%; /* Add margin-right for spacing */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
 }
