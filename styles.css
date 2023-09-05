@@ -11,7 +11,8 @@ body {
 main {
     display: flex;
     flex-direction: row; /* Display content horizontally */
-    max-width: 100%; /* Adjust the maximum width for full-width display */
+    max-width: 95%; /* Adjust the maximum width for full-width display */
+    max-height: 95%;
     background-color: #111; /* Update background color to space black or charcoal */
     padding: 0;
     position: relative; /* Add relative positioning for absolute child elements */
@@ -31,6 +32,7 @@ main {
     background-color: #fff;
     margin-right: 5%; /* Add margin-right to create space between Vertical Line and Sections */
     left: 30%;
+    position: absolute;
 }
 
 /* Sections */
