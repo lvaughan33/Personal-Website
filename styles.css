@@ -30,7 +30,10 @@ main {
     width: 1px;
     background-color: #fff;
     margin-right: 5%; /* Add margin-right to create space between Vertical Line and Sections */
-    left: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0; /* Extend Vertical Line from top to bottom */
+    left: 30%; /* Adjust the left position as needed */
 }
 
 /* Sections */
@@ -40,7 +43,7 @@ main {
     color: #fff; /* Set font color to white */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
-    left: 40%; 
+    margin-left: 5%; /* Move Sections 5% to the right */
 }
 
 /* Styles for headings and paragraphs */
