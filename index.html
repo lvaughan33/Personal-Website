@@ -71,6 +71,12 @@
             vertical-align: top;
         }
 
+        /* Reduce size of PNG and JPG files by 5% */
+        img[src$=".png"], img[src$=".jpg"] {
+            max-width: 95%; /* 5% reduction in width */
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -101,25 +107,25 @@
 
         <section class="section">
             <div class="figure">
-                <img src="figures/figure1.png" alt="Figure 1" style="max-width: 100%; height: auto;">
+                <img src="figures/figure1.png" alt="Figure 1">
             </div>
             <div class="figure">
-                <img src="figures/figure2.png" alt="Figure 2" style="max-width: 100%; height: auto;">
+                <img src="figures/figure2.png" alt="Figure 2">
             </div>
             <div class="figure">
-                <img src="figures/figure3.png" alt="Figure 3" style="max-width: 100%; height: auto;">
+                <img src="figures/figure3.png" alt="Figure 3">
             </div>
         </section>
 
         <section class="section">
             <div class="figure">
-                <img src="figures/figure4.png" alt="Figure 4" style="max-width: 100%; height: auto;">
+                <img src="figures/figure4.png" alt="Figure 4">
             </div>
             <div class="figure">
-                <img src="figures/figure5.png" alt="Figure 5" style="max-width: 100%; height: auto;">
+                <img src="figures/figure5.png" alt="Figure 5">
             </div>
             <div class="figure">
-                <img src="figures/figure6.png" alt="Figure 6" style="max-width: 100%; height: auto;">
+                <img src="figures/figure6.png" alt="Figure 6">
             </div>
         </section>
     </div>
