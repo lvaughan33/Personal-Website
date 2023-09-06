@@ -34,15 +34,18 @@ main {
     top: 0;
     bottom: 0;
     left: 20%; /* Adjust the left position as needed */
+    height: 100%; /* Ensure the vertical line spans the full height */
 }
 
 /* Sections */
 .section-content {
+    font-size: 18px;
     flex: 1;
-    color: #fff;
-    padding: 0 20px; /* Add padding to sections for space */
-    width: 60%; /* Set a consistent width for the sections */
-    margin-left: 10%; /* Adjust the left margin for content */
+    color: #fff; /* Set font color to white */
+    margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
+    padding: 0 10px; /* Add padding to sections for space */
+    margin-left: 15%; /* Adjust the left margin for sections */
+    margin-top: 5%; /* Adjust the top margin for sections */
 }
 
 /* Styles for headings and paragraphs */
