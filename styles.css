@@ -38,6 +38,14 @@ main::before {
     margin-top: 5%; /* Adjust the top margin for sections */
 }
 
+/* Define a class for section text */
+.section-text {
+    font-size: 18px; /* Set the desired font size */
+    font-family: Arial, sans-serif; /* Set the desired font family */
+    margin-top: 5%; /* Adjust the top margin as needed */
+    margin-left: 25%;
+}
+
 /* Styles for headings and paragraphs */
 h1 {
     font-size: 32px;
