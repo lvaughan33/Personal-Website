@@ -11,7 +11,6 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Hide overflow content to prevent scrolling */
         }
 
         header {
@@ -39,15 +38,11 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
 
         .section {
             margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .section img {
-            max-width: 100%; /* Ensure images don't exceed container width */
         }
 
         h1 {
@@ -58,33 +53,24 @@
             font-size: 18px;
         }
 
+        .figure {
+            display: inline-block;
+            margin: 5px;
+            width: 30%; /* Adjust the width as needed */
+        }
+
         .text-container {
-            width: 50%; /* Adjust the width for text */
+            width: 65%; /* Adjust the width for text */
             display: inline-block; /* Display text inline with Profile Picture */
             vertical-align: top; /* Align text to the top */
-            padding-left: 20px; /* Add some spacing between text and figures */
         }
 
         .profile-picture {
-            max-width: 50%; /* Set the maximum width for the Profile Picture */
+            max-width: 30%; /* Set the maximum width for the Profile Picture */
             display: inline-block;
             vertical-align: top;
         }
 
-        .figure-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .figure {
-            width: 30%; /* Adjust the width as needed */
-            margin: 5px;
-        }
-
-        .figure:nth-child(3) {
-            width: 50%; /* Set figure 3 to be the same width as the Profile Picture */
-        }
     </style>
 </head>
 <body>
@@ -103,7 +89,7 @@
     <div class="container">
         <section class="section">
             <div class="profile-picture">
-                <img src="profile_picture.jpg" alt="Profile Picture">
+                <img src="profile_picture.jpg" alt="Profile Picture" style="max-width: 100%;">
             </div>
             <div class="text-container">
                 <h1>Lucas Vaughan, M.S.</h1>
@@ -114,25 +100,26 @@
         </section>
 
         <section class="section">
-            <div class="figure-container">
-                <div class="figure">
-                    <img src="figures/figure1.png" alt="Figure 1">
-                </div>
-                <div class="figure">
-                    <img src="figures/figure2.png" alt="Figure 2">
-                </div>
-                <div class="figure">
-                    <img src="figures/figure3.png" alt="Figure 3">
-                </div>
-                <div class="figure">
-                    <img src="figures/figure4.png" alt="Figure 4">
-                </div>
-                <div class="figure">
-                    <img src="figures/figure5.png" alt="Figure 5">
-                </div>
-                <div class="figure">
-                    <img src="figures/figure6.png" alt="Figure 6">
-                </div>
+            <div class="figure">
+                <img src="figures/figure1.png" alt="Figure 1" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="figure">
+                <img src="figures/figure2.png" alt="Figure 2" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="figure">
+                <img src="figures/figure3.png" alt="Figure 3" style="max-width: 100%; height: auto;">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="figure">
+                <img src="figures/figure4.png" alt="Figure 4" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="figure">
+                <img src="figures/figure5.png" alt="Figure 5" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="figure">
+                <img src="figures/figure6.png" alt="Figure 6" style="max-width: 100%; height: auto;">
             </div>
         </section>
     </div>
