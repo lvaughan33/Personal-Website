@@ -15,7 +15,7 @@
         }
 
         header {
-            background-color: #9e9e9e; /* Updated header color to #9e9e9e */
+            background-color: #9e9e9e;
             padding: 10px 0;
             text-align: center;
         }
@@ -32,22 +32,22 @@
         }
 
         nav a:hover {
-            background-color: #fff;
+            background-color: #111;
         }
 
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            display: flex; /* Use flex to arrange elements side by side */
-            flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-            justify-content: space-between; /* Create space between elements */
-            align-items: flex-start; /* Align items to the top */
         }
 
         .section {
             margin-bottom: 20px;
-            flex: 1; /* Allow sections to take up equal space */
+            text-align: center;
+        }
+
+        .section img {
+            max-width: 100%; /* Ensure images don't exceed container width */
         }
 
         h1 {
@@ -59,26 +59,23 @@
         }
 
         .figure {
+            display: inline-block;
             margin: 5px;
             width: 30%; /* Adjust the width as needed */
-            max-width: 30%; /* Ensure figures don't exceed container width */
         }
 
-        .text-container {
-            width: 65%; /* Adjust the width for text */
-        }
-
-        .profile-picture img {
-            max-width: 90%; /* Decrease the size of Profile Picture by 10% */
-            height: auto;
-        }
-
-        /* Reduce size of PNG and JPG files by 5% */
+        /* Apply the 5% size reduction to PNG and JPG files */
         img[src$=".png"], img[src$=".jpg"] {
             max-width: 95%; /* 5% reduction in width */
             height: auto;
         }
 
+        .text-right {
+            text-align: left; /* Align text to the left */
+            width: 65%; /* Adjust the width for text */
+            display: inline-block; /* Display text inline with Profile Picture */
+            vertical-align: top; /* Align text to the top */
+        }
     </style>
 </head>
 <body>
@@ -95,16 +92,16 @@
     </header>
 
     <div class="container">
-        <section class="section profile-picture">
+        <section class="section">
             <div class="figure">
-                <img src="profile_picture.jpg" alt="Profile Picture">
+                <img src="profile_picture.jpg" alt="Profile Picture" style="max-width: 70%;">
             </div>
-        </section>
-        <section class="section text-container">
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
-            <p>Quantitative Ecologist | Environmental Scientist</p>
-            <p>Outdoor Enthusiast</p>
+            <div class="text-right">
+                <h1>Lucas Vaughan, M.S.</h1>
+                <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
+                <p>Quantitative Ecologist | Environmental Scientist</p>
+                <p>Outdoor Enthusiast</p>
+            </div>
         </section>
 
         <section class="section">
