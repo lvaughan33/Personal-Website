@@ -41,8 +41,9 @@
         }
 
         .section {
-            margin-bottom: 20px; /* Reduced margin for more compact layout */
-            text-align: center; /* Center align content */
+            margin-bottom: 20px;
+            text-align: center;
+            overflow: hidden; /* Hide any overflowing content */
         }
 
         .section img {
@@ -50,11 +51,11 @@
         }
 
         h1 {
-            font-size: 24px; /* Reduced font size for compactness */
+            font-size: 24px;
         }
 
         p {
-            font-size: 18px; /* Reduced font size for compactness */
+            font-size: 18px;
         }
     </style>
 </head>
@@ -73,13 +74,16 @@
 
     <div class="container">
         <section class="section">
-            <div class="figure">
+            <div class="figure" style="float: left; width: 50%;">
                 <img src="profile_picture.jpg" alt="Profile Picture">
             </div>
-            <h1>Lucas Vaughan, M.S.</h1>
-            <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
-            <p>Quantitative Ecologist | Environmental Scientist</p>
-            <p>Outdoor Enthusiast</p>
+            <div style="float: left; width: 50%; text-align: left;">
+                <h1>Lucas Vaughan, M.S.</h1>
+                <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
+                <p>Quantitative Ecologist | Environmental Scientist</p>
+                <p>Outdoor Enthusiast</p>
+            </div>
+            <div style="clear: both;"></div>
         </section>
 
         <section class="section">
