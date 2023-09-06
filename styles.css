@@ -10,31 +10,21 @@ body {
 /* Container for the entire page */
 main {
     display: flex;
-    flex-direction: row; /* Display content horizontally */
     max-width: 100%; /* Adjust the maximum width for full-width display */
     background-color: #111; /* Update background color to space black or charcoal */
     padding: 0;
     position: relative; /* Add relative positioning for absolute child elements */
 }
 
-/* Container for Sections and Vertical Line */
-.container {
-    display: flex;
-    align-items: flex-start; /* Align children at the top */
-    justify-content: flex-start; /* Align children to the left */
-    width: 100%; /* Occupy full width of the container */
-    position: relative; /* Add relative positioning for absolute child elements */
-}
-
 /* Vertical line */
-.vertical-line {
+main::before {
+    content: '';
     width: 1px;
     background-color: #fff;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20%; /* Adjust the left position as needed */
-    height: 100%; /* Ensure the vertical line spans the full height */
+    left: 15%; /* Adjust the left position as needed */
 }
 
 /* Sections */
@@ -44,7 +34,7 @@ main {
     color: #fff; /* Set font color to white */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
-    margin-left: 15%; /* Adjust the left margin for sections */
+    margin-left: 5%; /* Adjust the left margin for sections */
     margin-top: 5%; /* Adjust the top margin for sections */
 }
 
@@ -56,31 +46,25 @@ h1 {
 
 p {
     font-size: 18px;
-    line-height: 1.2;
-    white-space: pre-line;
+    line-height: 1.2; /* Decrease the line height for less spacing between paragraphs */
+    white-space: pre-line; /* Preserve line breaks */
 }
 
 /* Style for clickable links */
 a {
     text-decoration: underline;
-    color: #fff;
+    color: #fff; /* Set text color to white */
     cursor: pointer;
 }
 
 /* Navigation menu styles */
 nav a {
-    color: #fff;
-}
-
-/* Remove list item markers */
-nav ul {
-    list-style: none;
-    padding: 0;
+    color: #fff; /* Update font color for navigation links to white */
 }
 
 /* List items (sections) */
 nav ul li {
-    margin-bottom: 9px;
+    margin-bottom: 9px; /* Add margin at the bottom to increase vertical space between sections */
 }
 
 /* Media Query for Small Screens */
