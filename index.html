@@ -32,19 +32,22 @@
         }
 
         nav a:hover {
-            background-color: #333;
+            background-color: #fff;
         }
 
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center;
+            display: flex; /* Use flex to arrange elements side by side */
+            flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+            justify-content: space-between; /* Create space between elements */
+            align-items: flex-start; /* Align items to the top */
         }
 
         .section {
             margin-bottom: 20px;
-            text-align: left; /* Align text to the left */
+            flex: 1; /* Allow sections to take up equal space */
         }
 
         h1 {
@@ -56,20 +59,17 @@
         }
 
         .figure {
-            display: inline-block;
             margin: 5px;
             width: 30%; /* Adjust the width as needed */
-            vertical-align: top; /* Align figures to the top */
+            max-width: 30%; /* Ensure figures don't exceed container width */
         }
 
         .text-container {
             width: 65%; /* Adjust the width for text */
-            display: inline-block; /* Display text inline with Profile Picture */
-            vertical-align: top; /* Align text to the top */
         }
 
-        .profile-picture, .figure img {
-            max-width: 40%; /* Make Profile Picture and figures a bit smaller */
+        .profile-picture img {
+            max-width: 90%; /* Decrease the size of Profile Picture by 10% */
             height: auto;
         }
 
@@ -77,13 +77,6 @@
         img[src$=".png"], img[src$=".jpg"] {
             max-width: 95%; /* 5% reduction in width */
             height: auto;
-        }
-
-        /* Custom styles for larger screens */
-        @media screen and (min-width: 768px) {
-            .text-container {
-                width: 30%; /* Adjust the width for text on larger screens */
-            }
         }
 
     </style>
@@ -102,16 +95,16 @@
     </header>
 
     <div class="container">
-        <section class="section">
-            <div class="profile-picture">
+        <section class="section profile-picture">
+            <div class="figure">
                 <img src="profile_picture.jpg" alt="Profile Picture">
             </div>
-            <div class="text-container">
-                <h1>Lucas Vaughan, M.S.</h1>
-                <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
-                <p>Quantitative Ecologist | Environmental Scientist</p>
-                <p>Outdoor Enthusiast</p>
-            </div>
+        </section>
+        <section class="section text-container">
+            <h1>Lucas Vaughan, M.S.</h1>
+            <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
+            <p>Quantitative Ecologist | Environmental Scientist</p>
+            <p>Outdoor Enthusiast</p>
         </section>
 
         <section class="section">
