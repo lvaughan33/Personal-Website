@@ -13,7 +13,6 @@
             color: #fff;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Hide overflow content to prevent scrolling */
         }
 
         header {
@@ -44,45 +43,24 @@
         }
 
         .section {
-            margin-bottom: 20px;
-            text-align: center;
+            margin-bottom: 40px;
         }
 
-        .section img {
-            max-width: 100%; /* Ensure images don't exceed container width */
+        .section-paragraph {
+            font-size: 18px;
         }
 
+        .section-paragraph a {
+            text-decoration: underline;
+            color: #fff;
+        }
+        
         h1 {
             font-size: 24px;
         }
 
         p {
             font-size: 18px;
-        }
-
-        .figure {
-            display: inline-block;
-            margin: 5px;
-            width: 28%; /* Adjust the width as needed */
-            transform: translateY(-2%); /* Move up by 2% */
-        }
-
-        /* Apply the size reduction to Profile Picture, PNG, and JPG files */
-        img[src="profile_picture.jpg"], img[src$=".png"], img[src$=".jpg"] {
-            max-width: 90%; /* 10% reduction in width for Profile Picture */
-            height: auto;
-        }
-
-        .text-right {
-            text-align: left; /* Align text to the left */
-            width: 65%; /* Adjust the width for text */
-            display: inline-block; /* Display text inline with Profile Picture */
-            vertical-align: top; /* Align text to the top */
-        }
-
-        /* Set a fixed width for all figures */
-        .figure img {
-            width: 100%; /* Figures 1-6 will have the same width */
         }
     </style>
 </head>
