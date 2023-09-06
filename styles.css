@@ -30,22 +30,19 @@ main {
 .vertical-line {
     width: 1px;
     background-color: #fff;
-    margin-right: 5%;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20%;
+    left: 10%; /* Adjust the left position as needed */
 }
 
 /* Sections */
 .section-content {
-    font-size: 18px;
     flex: 1;
-    color: #fff; /* Set font color to white */
-    margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
-    padding: 0 10px; /* Add padding to sections for space */
-    margin-left: 6%; /* Move Sections 5% to the right */
-    margin-top: 5%; /* Move Sections down by 5% */
+    color: #fff;
+    padding: 0 20px; /* Add padding to sections for space */
+    width: 60%; /* Set a consistent width for the sections */
+    margin-left: 10%; /* Adjust the left margin for content */
 }
 
 /* Styles for headings and paragraphs */
@@ -56,20 +53,20 @@ h1 {
 
 p {
     font-size: 18px;
-    line-height: 1.2; /* Decrease the line height for less spacing between paragraphs */
-    white-space: pre-line; /* Preserve line breaks */
+    line-height: 1.2;
+    white-space: pre-line;
 }
 
 /* Style for clickable links */
 a {
     text-decoration: underline;
-    color: #fff; /* Set text color to white */
+    color: #fff;
     cursor: pointer;
 }
 
 /* Navigation menu styles */
 nav a {
-    color: #fff; /* Update font color for navigation links to white */
+    color: #fff;
 }
 
 /* Remove list item markers */
@@ -80,7 +77,7 @@ nav ul {
 
 /* List items (sections) */
 nav ul li {
-    margin-bottom: 9px; /* Add margin at the bottom to increase vertical space between sections */
+    margin-bottom: 9px;
 }
 
 /* Media Query for Small Screens */
