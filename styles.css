@@ -57,7 +57,7 @@ h1 {
 p {
     font-size: 18px;
     line-height: 1.2; /* Decrease the line height for less spacing between paragraphs */
-    white-space: pre-line; /* Preserve line breaks */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 /* Style for clickable links */
