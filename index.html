@@ -11,6 +11,7 @@
             color: #fff;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Hide overflow content to prevent scrolling */
         }
 
         header {
@@ -43,6 +44,7 @@
 
         .section {
             margin-bottom: 20px;
+            text-align: left; /* Align text to the left */
         }
 
         h1 {
@@ -57,6 +59,7 @@
             display: inline-block;
             margin: 5px;
             width: 30%; /* Adjust the width as needed */
+            vertical-align: top; /* Align figures to the top */
         }
 
         .text-container {
@@ -65,10 +68,9 @@
             vertical-align: top; /* Align text to the top */
         }
 
-        .profile-picture {
-            max-width: 30%; /* Set the maximum width for the Profile Picture */
-            display: inline-block;
-            vertical-align: top;
+        .profile-picture, .figure img {
+            max-width: 45%; /* Make Profile Picture and figures smaller */
+            height: auto;
         }
 
         /* Reduce size of PNG and JPG files by 5% */
@@ -95,7 +97,7 @@
     <div class="container">
         <section class="section">
             <div class="profile-picture">
-                <img src="profile_picture.jpg" alt="Profile Picture" style="max-width: 100%;">
+                <img src="profile_picture.jpg" alt="Profile Picture">
             </div>
             <div class="text-container">
                 <h1>Lucas Vaughan, M.S.</h1>
