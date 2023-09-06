@@ -25,6 +25,7 @@ main::before {
     top: 0;
     bottom: 0;
     left: 15%; /* Adjust the left position as needed */
+    height: 100%; /* Ensure the vertical line spans the entire height */
 }
 
 /* Sections */
@@ -34,8 +35,8 @@ main::before {
     color: #fff; /* Set font color to white */
     margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
     padding: 0 10px; /* Add padding to sections for space */
+    width: 70%; /* Set a fixed width for the sections */
     margin-left: 5%; /* Adjust the left margin for sections */
-    margin-top: 5%; /* Adjust the top margin for sections */
 }
 
 /* Define a class for section text */
