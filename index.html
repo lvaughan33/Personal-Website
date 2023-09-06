@@ -43,7 +43,6 @@
         .section {
             margin-bottom: 20px;
             text-align: center;
-            overflow: hidden; /* Hide any overflowing content */
         }
 
         .section img {
@@ -56,6 +55,12 @@
 
         p {
             font-size: 18px;
+        }
+
+        .figure {
+            display: inline-block;
+            margin: 5px;
+            width: 30%; /* Adjust the width as needed */
         }
     </style>
 </head>
@@ -74,16 +79,15 @@
 
     <div class="container">
         <section class="section">
-            <div class="figure" style="float: left; width: 50%;">
-                <img src="profile_picture.jpg" alt="Profile Picture">
+            <div class="figure">
+                <img src="profile_picture.jpg" alt="Profile Picture" style="max-width: 80%;">
             </div>
-            <div style="float: left; width: 50%; text-align: left;">
+            <div style="text-align: left;">
                 <h1>Lucas Vaughan, M.S.</h1>
                 <p>Mathematical Modeler | Data Analyst | Technical Writer</p>
                 <p>Quantitative Ecologist | Environmental Scientist</p>
                 <p>Outdoor Enthusiast</p>
             </div>
-            <div style="clear: both;"></div>
         </section>
 
         <section class="section">
