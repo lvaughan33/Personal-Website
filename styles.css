@@ -16,19 +16,8 @@ main {
     position: relative; /* Add relative positioning for absolute child elements */
 }
 
-/* Sections */
-.section-content {
-    font-size: 18px;
-    flex: 1;
-    color: #fff; /* Set font color to white */
-    margin-bottom: 10px; /* Add margin at the bottom to increase vertical space */
-    padding: 0 10px; /* Add padding to sections for space */
-    width: 70%; /* Set a fixed width for the sections */
-    margin-left: 5%; /* Adjust the left margin for sections */
-}
-
 /* Vertical line */
-.vertical-line {
+main::before {
     content: '';
     width: 1px;
     background-color: #fff;
@@ -39,12 +28,24 @@ main {
     height: 100%; /* Ensure the vertical line spans the entire height */
 }
 
+/* Sections */
+.section-content {
+    font-size: 18px;
+    flex: 1;
+    color: #fff; /* Set font color to white */
+    margin: 0; /* Remove margin to prevent text wrapping */
+    padding: 0 10px; /* Add padding to sections for space */
+    width: 70%; /* Set a fixed width for the sections */
+    margin-left: 5%; /* Adjust the left margin for sections */
+}
+
 /* Define a class for section text */
 .section-text {
     font-size: 18px; /* Set the desired font size */
     font-family: Arial, sans-serif; /* Set the desired font family */
-    margin-top: 5%; /* Adjust the top margin as needed */
-    margin-left: 20%;
+    margin: 0; /* Remove margin to prevent text wrapping */
+    padding: 0; /* Remove padding */
+    line-height: 1.2; /* Set line height for text */
 }
 
 /* Styles for headings and paragraphs */
@@ -69,9 +70,15 @@ a {
 /* Navigation menu styles */
 nav a {
     color: #fff; /* Update font color for navigation links to white */
+    text-decoration: none; /* Remove underline from links */
 }
 
 /* List items (sections) */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
 nav ul li {
     margin-bottom: 9px; /* Add margin at the bottom to increase vertical space between sections */
 }
