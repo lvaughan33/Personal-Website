@@ -7,45 +7,78 @@
 
     <!-- Include the CSS code for section styling -->
     <style>
-    /* Style for section headers */
-    .section-header {
-        font-size: 32px; /* Set your desired font size */
-        margin-left: 20%; /* Adjust horizontal alignment as needed */
-        margin-top: 20px; /* Adjust vertical alignment as needed */
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
 
-    /* Style for section text */
-    .section-paragraph {
-        font-size: 18px; /* Set your desired font size */
-        margin-left: 20%; /* Match the horizontal alignment of headers */
-        margin-top: 5px; /* Adjust vertical alignment as needed */
-    }
+        header {
+            background-color: #222;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-paragraph {
+            font-size: 18px;
+        }
+
+        .section-paragraph a {
+            text-decoration: underline;
+            color: #fff;
+        }
     </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #111; color: #fff; margin: 0; padding: 0;">
-    <main style="display: flex; max-width: 100%; background-color: #111; padding: 0; position: relative;">
-        <!-- Sections -->
-        <section class="section-content" style="font-size: 18px; flex: 1; color: #fff; margin: 0; padding: 0 10px; width: 70%; margin-left: 5%;">
-            <nav style="margin-bottom: 10px;">
-                <ul style="list-style: none; padding: 0; white-space: nowrap;">
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="index.html" style="text-decoration: underline; color: #fff;">Home</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="about.html" style="text-decoration: underline; color: #fff;">About Me</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="contact.html" style="text-decoration: underline; color: #fff;">Contact</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="presentations.html" style="text-decoration: underline; color: #fff;">Presentations</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="publications.html" style="text-decoration: underline; color: #fff;">Publications</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="technical_writing.html" style="text-decoration: underline; color: #fff;">Technical Writing</a></li>
-                    <li style="margin-bottom: 9px; margin-left: 5%;"><a href="jupyter_notebooks.html" style="text-decoration: underline; color: #fff;">Jupyter Notebooks</a></li>
-                </ul>
-            </nav>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+            <a href="presentations.html">Presentations</a>
+            <a href="publications.html">Publications</a>
+            <a href="technical_writing.html">Technical Writing</a>
+            <a href="jupyter_notebooks.html">Jupyter Notebooks</a>
+        </nav>
+    </header>
 
-        <!-- Publications Section -->
-        <section class="section-text">
-            <h1 class="section-header">Publications</h1>
-            <p class="section-paragraph">L.J.L. Vaughan, D.B. Poll, A.E. Strand, and S.G. Pritchard. <a href="https://www.proquest.com/openview/408678c79dab66e713e9f0059dd91520/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" style="text-decoration: underline; color: #fff;">Modeling Carbon Dynamics Using FACE Data from Duke Forest</a>. Master’s thesis, College of Charleston, 2022.</p>
+    <div class="container">
+        <section class="section">
+            <h1>Publications</h1>
+            <p class="section-paragraph">
+                L.J.L. Vaughan, D.B. Poll, A.E. Strand, and S.G. Pritchard.
+                <a href="https://www.proquest.com/openview/408678c79dab66e713e9f0059dd91520/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank">
+                    Modeling Carbon Dynamics Using FACE Data from Duke Forest
+                </a>. Master’s thesis, College of Charleston, 2022.
+            </p>
         </section>
-
-        <!-- Vertical Line -->
-        <section class="vertical-line" style="width: 1px; background-color: #fff; position: absolute; top: 0; bottom: 0; left: 15%;"></section>
-    </main>
+    </div>
 </body>
 </html>
