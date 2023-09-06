@@ -58,6 +58,19 @@
             font-size: 18px;
         }
 
+        .text-container {
+            width: 50%; /* Adjust the width for text */
+            display: inline-block; /* Display text inline with Profile Picture */
+            vertical-align: top; /* Align text to the top */
+            padding-left: 20px; /* Add some spacing between text and figures */
+        }
+
+        .profile-picture {
+            max-width: 50%; /* Set the maximum width for the Profile Picture */
+            display: inline-block;
+            vertical-align: top;
+        }
+
         .figure-container {
             display: flex;
             flex-wrap: wrap;
@@ -69,15 +82,8 @@
             margin: 5px;
         }
 
-        .text-container {
-            width: 65%; /* Adjust the width for text */
-            display: inline-block; /* Display text inline with Profile Picture */
-            vertical-align: top; /* Align text to the top */
-            padding-left: 20px; /* Add some spacing between text and figures */
-        }
-
         .figure:nth-child(3) {
-            width: 30%; /* Set figure 3 to be the same width as the Profile Picture */
+            width: 50%; /* Set figure 3 to be the same width as the Profile Picture */
         }
     </style>
 </head>
@@ -96,10 +102,8 @@
 
     <div class="container">
         <section class="section">
-            <div class="section-content">
-                <div class="figure">
-                    <img src="profile_picture.jpg" alt="Profile Picture" style="max-width: 100%;">
-                </div>
+            <div class="profile-picture">
+                <img src="profile_picture.jpg" alt="Profile Picture">
             </div>
             <div class="text-container">
                 <h1>Lucas Vaughan, M.S.</h1>
@@ -113,22 +117,22 @@
             <h2>Figures:</h2>
             <div class="figure-container">
                 <div class="figure">
-                    <img src="figures/figure1.png" alt="Figure 1" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure1.png" alt="Figure 1">
                 </div>
                 <div class="figure">
-                    <img src="figures/figure2.png" alt="Figure 2" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure2.png" alt="Figure 2">
                 </div>
                 <div class="figure">
-                    <img src="figures/figure3.png" alt="Figure 3" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure3.png" alt="Figure 3">
                 </div>
                 <div class="figure">
-                    <img src="figures/figure4.png" alt="Figure 4" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure4.png" alt="Figure 4">
                 </div>
                 <div class="figure">
-                    <img src="figures/figure5.png" alt="Figure 5" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure5.png" alt="Figure 5">
                 </div>
                 <div class="figure">
-                    <img src="figures/figure6.png" alt="Figure 6" style="max-width: 100%; height: auto;">
+                    <img src="figures/figure6.png" alt="Figure 6">
                 </div>
             </div>
         </section>
