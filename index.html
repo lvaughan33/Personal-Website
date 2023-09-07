@@ -62,7 +62,7 @@
         .figure {
             display: inline-block;
             margin: 5px;
-            width: 25%; /* Adjust the width as needed */
+            width: 30%; /* Adjust the width as needed */
             transform: translateY(-2%); /* Move up by 2% */
         }
 
@@ -70,6 +70,17 @@
         img[src="profile_picture.jpg"], img[src$=".png"], img[src$=".jpg"] {
             max-width: 90%; /* 10% reduction in width for Profile Picture */
             height: auto;
+        }
+
+        /* Set fixed dimensions for figures 1 through 6 */
+        img[src="figures/figure1.png"],
+        img[src="figures/figure2.png"],
+        img[src="figures/figure3.png"],
+        img[src="figures/figure4.png"],
+        img[src="figures/figure5.png"],
+        img[src="figures/figure6.png"] {
+            width: 200px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
         }
 
         .text-right {
