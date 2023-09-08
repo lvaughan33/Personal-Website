@@ -63,6 +63,15 @@
             font-size: 18px;
         }
 
+        /* Remove default padding and margin for the ul element */
+        ul.section-paragraph {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            list-style-position: inside; /* Place bullet points inside the list item */
+            padding-left: 0; /* Remove the default padding to align with headers */
+        }
+
         /* Add bullet points */
         ul.section-paragraph li {
             list-style-type: disc; /* You can use 'disc', 'circle', or 'square' as the bullet point style */
