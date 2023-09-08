@@ -63,22 +63,19 @@
             font-size: 18px;
         }
 
-        /* Add bullet points */
-        ul.section-paragraph li {
-            list-style-type: disc; /* You can use 'disc', 'circle', or 'square' as the bullet point style */
-            padding-left: 20px; /* Adjust the padding as needed to control the distance between the bullet point and text */
-        }
-
         /* Remove default padding and margin for the ul element */
         ul.section-paragraph {
             list-style: none;
             padding: 0;
             margin: 0;
+            list-style-position: inside; /* Place bullet points inside the list item */
+            padding-left: 0; /* Remove the default padding to align with headers */
         }
 
-        /* Adjust padding for list items (bullet points) */
+        /* Add bullet points */
         ul.section-paragraph li {
-            padding-left: 0;
+            list-style-type: disc; /* You can use 'disc', 'circle', or 'square' as the bullet point style */
+            padding-left: 20px; /* Adjust the padding as needed to control the distance between the bullet point and text */
         }
     </style>
 </head>
