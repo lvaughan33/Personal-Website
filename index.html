@@ -36,7 +36,7 @@
         }
 
         .container {
-            max-width: 960px;
+            max-width: 1160px; /* Adjusted width to accommodate Figure 3 */
             margin: 0 auto;
             padding: 20px;
         }
@@ -62,8 +62,7 @@
         .figure {
             display: inline-block;
             margin: 5px;
-            width: 30%; /* Adjust the width as needed */
-            transform: translateY(-2%); /* Move up by 2% */
+            width: calc(30% - 10px); /* Adjust the width as needed */
         }
 
         /* Set fixed dimensions for profile picture */
@@ -71,23 +70,28 @@
         img[src="profile_picture.jpg"] {
             width: 138px;
             height: 138px;
-            margin-top: 20px;
+            margin-top: 22px;
         }
-
+        
         /* Set fixed dimensions for figures 1 through 6 */
-        img[src^="figures/figure"] {
-            width: 250px; /* Adjust the width as needed */
-            height: 250px; /* Adjust the height as needed */
+        img[src="figures/figure1.png"],
+        img[src="figures/figure2.png"],
+        img[src="figures/figure3.png"],
+        img[src="figures/figure4.png"],
+        img[src="figures/figure5.png"],
+        img[src="figures/figure6.png"] {
+            width: 300px; /* Adjust the width as needed */
+            height: 210px; /* Adjust the height as needed */
         }
 
         img[src="figures/figure3.png"] {
-            width: 200px; /* Set width for Figure 3 */
-            height: 200px; /* Set height for Figure 3 */
+            width: 275px; /* Match width with other figures */
+            height: 200px; /* Adjust the height as needed */
         }
 
         .text-right {
             text-align: left; /* Align text to the left */
-            width: 65%; /* Adjust the width for text */
+            width: calc(65% - 20px); /* Adjust the width for text */
             display: inline-block; /* Display text inline with Profile Picture */
             vertical-align: top; /* Align text to the top */
         }
