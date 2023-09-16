@@ -62,6 +62,21 @@
         p {
             font-size: 18px;
         }
+
+        /* Remove default padding and margin for the ul element */
+        ul.section-paragraph {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            list-style-position: inside; /* Place bullet points inside the list item */
+            padding-left: 0; /* Remove the default padding to align with headers */
+        }
+
+        /* Add bullet points */
+        ul.section-paragraph li {
+            list-style-type: disc; /* You can use 'disc', 'circle', or 'square' as the bullet point style */
+            padding-left: 0; /* Adjust the padding as needed to control the distance between the bullet point and text */
+        }
     </style>
 </head>
 <body>
@@ -81,10 +96,10 @@
         <section class="section">
             <h1>Publications</h1>
             <p class="section-paragraph">
-                L.J.L. Vaughan, D.B. Poll, A.E. Strand, and S.G. Pritchard.
+                <li>L.J.L. Vaughan, D.B. Poll, A.E. Strand, and S.G. Pritchard.
                 <a href="https://www.proquest.com/openview/408678c79dab66e713e9f0059dd91520/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank">
                     Modeling Carbon Dynamics Using FACE Data from Duke Forest.
-                </a>Master’s thesis, College of Charleston, 2022.
+                </a>Master’s thesis, College of Charleston, 2022.</li>
             </p>
         </section>
     </div>
