@@ -42,19 +42,10 @@
             padding: 20px;
         }
 
-        .section {
-            margin-bottom: 40px;
-        }
-
         .section-paragraph {
             font-size: 18px;
         }
 
-        .section-paragraph a {
-            text-decoration: underline;
-            color: #fff;
-        }
-        
         h1 {
             font-size: 24px;
         }
@@ -63,18 +54,26 @@
             font-size: 18px;
         }
 
-        /* Remove default padding and margin for the ul element */
         ul.section-paragraph {
             list-style: none;
             padding: 0;
             margin: 0;
-            list-style-position: inside; /* Place bullet points inside the list item */
+            list-style-position: inside;
         }
 
-        /* Add bullet points */
         ul.section-paragraph li {
-            list-style-type: disc; /* You can use 'disc', 'circle', or 'square' as the bullet point style */
-            padding-left: 0; /* Remove the default padding to align with headers */
+            list-style-type: disc;
+            padding-left: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .section-paragraph {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
