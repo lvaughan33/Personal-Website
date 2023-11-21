@@ -59,51 +59,49 @@
         }
 
         .figure {
-            display: inline-block;
             margin: 5px;
-            width: 30%;
         }
 
         img[src="profile_picture.jpg"] {
             width: 100%;
             height: auto;
             margin-top: 20px;
+            margin-bottom: 10px; /* Adjusted margin for better spacing */
         }
 
         img[src^="figures/figure"] {
             width: 100%;
             height: auto;
+            margin-bottom: 10px;
         }
 
         .text-right {
             text-align: left;
-            width: 65%;
-            display: inline-block;
-            vertical-align: top;
+            width: 100%;
+            margin-top: 10px; /* Adjusted margin for better spacing */
         }
 
-        @media only screen and (max-width: 600px) {
-            .container {
-                padding: 10px;
-            }
-
+        @media only screen and (min-width: 600px) {
             .figure {
-                width: 100%;
-                margin: 0;
+                display: inline-block;
+                width: calc(30% - 10px);
             }
 
             img[src="profile_picture.jpg"] {
-                margin-top: 10px;
+                width: 137px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
 
             img[src^="figures/figure"] {
-                margin-bottom: 10px;
+                width: 100%;
             }
 
             .text-right {
-                width: 100%;
-                display: block;
-                margin-top: 10px;
+                width: calc(65% - 20px);
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 0;
             }
         }
     </style>
