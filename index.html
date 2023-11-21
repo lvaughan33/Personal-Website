@@ -35,7 +35,7 @@
         }
 
         .container {
-            max-width: 960px;
+            max-width: 1160px; /* Adjusted width to accommodate Figure 3 */
             margin: 0 auto;
             padding: 20px;
         }
@@ -46,8 +46,7 @@
         }
 
         .section img {
-            max-width: 100%;
-            height: auto;
+            max-width: 100%; /* Ensure images don't exceed container width */
         }
 
         h1 {
@@ -58,51 +57,33 @@
             font-size: 18px;
         }
 
+        /* Set a fixed width for all figures */
         .figure {
+            display: inline-block;
             margin: 5px;
+            width: calc(30% - 10px); /* Adjust the width as needed */
         }
 
+        /* Set fixed dimensions for profile picture */
         img[src="profile_picture.jpg"] {
-            width: 100%;
-            height: auto;
+            width: 137px;
+            height: 137px;
             margin-top: 20px;
             margin-bottom: 10px; /* Adjusted margin for better spacing */
+            vertical-align: middle; /* Align vertically with adjacent text */
         }
 
+        /* Set fixed dimensions for figures 1 through 6 */
         img[src^="figures/figure"] {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
+            width: 310px; /* Adjust the width as needed */
+            height: 210px; /* Adjust the height as needed */
         }
 
         .text-right {
-            text-align: left;
-            width: 100%;
-            margin-top: 10px; /* Adjusted margin for better spacing */
-        }
-
-        @media only screen and (min-width: 600px) {
-            .figure {
-                display: inline-block;
-                width: calc(30% - 10px);
-            }
-
-            img[src="profile_picture.jpg"] {
-                width: 137px;
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-
-            img[src^="figures/figure"] {
-                width: 100%;
-            }
-
-            .text-right {
-                width: calc(65% - 20px);
-                display: inline-block;
-                vertical-align: top;
-                margin-top: 0;
-            }
+            text-align: left; /* Align text to the left */
+            width: calc(65% - 20px); /* Adjust the width for text */
+            display: inline-block; /* Display text inline with Profile Picture */
+            vertical-align: middle; /* Align vertically with adjacent image */
         }
     </style>
 </head>
