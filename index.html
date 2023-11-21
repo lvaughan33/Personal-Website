@@ -47,6 +47,7 @@
 
         .section img {
             max-width: 100%;
+            height: auto;
         }
 
         h1 {
@@ -60,24 +61,23 @@
         .figure {
             display: inline-block;
             margin: 5px;
-            width: calc(30% - 10px);
+            width: 30%;
         }
 
         img[src="profile_picture.jpg"] {
-            width: 137px;
-            height: 137px;
+            width: 100%;
+            height: auto;
             margin-top: 20px;
-            margin-left: 135px;
         }
 
         img[src^="figures/figure"] {
-            width: 310px;
-            height: 210px;
+            width: 100%;
+            height: auto;
         }
 
         .text-right {
             text-align: left;
-            width: calc(65% - 20px);
+            width: 65%;
             display: inline-block;
             vertical-align: top;
         }
@@ -87,33 +87,17 @@
                 padding: 10px;
             }
 
-            .section img {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
             .figure {
                 width: 100%;
                 margin: 0;
             }
 
             img[src="profile_picture.jpg"] {
-                width: 100%;
-                height: auto;
                 margin-top: 10px;
-                margin-left: 0;
             }
 
             img[src^="figures/figure"] {
-                width: 100%;
-                height: auto;
+                margin-bottom: 10px;
             }
 
             .text-right {
